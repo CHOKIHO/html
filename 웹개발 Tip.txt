@@ -1,0 +1,57 @@
+
+
+■ 웹 디자이너가 없을 때,
+
+부트스트랩 : http://getbootstrap.com
+
+부트스트랩 자바스크립트(영문) : http://getbootstrap.com/javascript/
+부트스트랩 자바스크립트(한글) : http://lab.nagesoft.com/design/jsplugin
+CSS(한글) : http://ko.learnlayout.com/no-layout.html
+
+
+■ 스프링말고 다른 웹 프레임워크를 사용하고 싶을 때,
+Play framework : https://www.playframework.com/
+- 2014년 11월 17일 기준으로 2.3.6버전이 있음.
+
+■ MyBatis 강좌가 필요할 때,
+MyBatis 강좌(한글) : http://mybatis.github.io/mybatis-3/ko/index.html
+
+■ JQuery 공부하고 싶을 때,
+http://direct.co.kr/cs/jQuery.pdf
+
+■ JSP
+JSP 아주 간단한 강좌(한글) : http://www.okjsp.net/seq/260285
+
+■ 데이터베이스 
+
+	
+	
+	1. Toad for Oracle 12.6 Freeware 툴을 이용해서 오라클 DB에 접속하는 방법
+	  -사이트 : http://www.gurubee.net/lecture/2710
+	2. 오렌지 다운로드
+	  -Instant Client 설치 → tnsnames.ora 파일 Instant Client에 복사
+	  -사용자만들기
+		 create user scott identified by tiger
+		 default tablespace users
+		 temporary tablespace temp;
+	  -사용자 권한주기
+		grant connect, resource, plustrace, alter session to scott;
+	  -사용자 Lock 풀기
+	    ALTER USER [사용자명] ACCOUNT UNLOCK;		  
+	  -테이블만들기
+		 CREATE TABLE 부서 ( 
+		    부서번호  INTEGER NOT NULL, 
+		    부서이름  CHAR(20) NULL,
+		     PRIMARY KEY (부서번호) ) ;	  
+			 
+ 
+	3.오라클 Instant Client 설치
+	  -Oracle instant Client는 별도의 설치가 필요없고, 
+	   적당한 위치에 압축을 푼후 tnsnames.ora 파일을 생성해 주면 된다. 
+	   만약 서버를 설치했다면 tnsnames.ora 파일은 
+	   'D:\app\ora1\product\12.1.0\dbhome_1\NETWORK\ADMIN\' 폴더 아래에 있다.
+	   
+	
+	
+    
+
