@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	table{
+		width: 400px;
+		border-spacing: 0;
+		border-collapse: collapse;
+		border: 1px solid black;
+	}
+	table td{
+		border: 1px solid black;
+	}
+	.first{ /* 클래스가 first인 요소에 적용 */
+		width: 120px;
+	}
+	.last{
+		width: 60px;
+	}
+  </style>
+  <script>
+	function ch(id, index){
+		// id라는 인자변수에는 'tr1', 'tr2', 'tr3' 중 하나가
+		// 들어온다.
+		//alert(id);
+		// 받은 id를 가지고 현재문서에서 해당 행(tr)을 검색한다.
+		
+		// 이벤트를 발생한 행의 정보는 id다.
+
+/*		if(id == 1){
+			var tr = document.getElementById("tr1");
+
+		}else if(id == 2){
+			var tr = document.getElementById("tr2");
+		}else if(id == 3){
+			var tr = document.getElementById("tr3");
+		}
+*/
+		var tr = document.getElementById(id);
+		
+		//검색된 tr에서 배경색을 변경한다.
+		var color = "#fff";
+		switch(index){
+			case 1: 
+				color = "#f00";
+				break;
+			case 2:
+				color = "#00f";
+				break;
+			case 3:
+				color = "#0f0";
+				break;
+		}
+		tr.style.backgroundColor = color;
+	}
+  </script>
+ </head>
+ <body>
+	<h1>행 배경색 변경</h1>
+
+	<table>
+		<tbody>
+			<tr id="tr1">
+				<td class="first">1</td>
+				<td>2</td>
+				<td>3</td>
+				<td class="last">
+<select onchange="ch('tr1', this.selectedIndex)">
+						<option>선택</option>
+						<option>빨강</option>
+						<option>파랑</option>
+						<option>초록</option>
+					</select>
+				</td>
+			</tr>
+			<tr id="tr2">
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>
+					<select onchange="ch('tr2', this.selectedIndex)">
+						<option>선택</option>
+						<option>빨강</option>
+						<option>파랑</option>
+						<option>초록</option>
+					</select>
+				</td>
+			</tr>
+			<tr id="tr3">
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>
+					<select onchange="ch('tr3', this.selectedIndex)">
+						<option>선택</option>
+						<option>빨강</option>
+						<option>파랑</option>
+						<option>초록</option>
+					</select>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+ </body>
+</html>

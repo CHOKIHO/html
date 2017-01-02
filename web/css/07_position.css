@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+body{font-size:0.75em; margin:10px;}
+
+.bbs{width:260px; 
+     border:2px solid #ccc;
+	 background:#ffc;
+	 padding:10px;
+	 position:relative;}
+
+.bbs h2{color:#36f; 
+	    margin-bottom:10px;}
+
+.bbs ul li{height:18px; 
+		   padding-left:10px;
+		   background:url(c:/web/image/icon_down.gif) no-repeat 0% 50%}
+
+.bbs ul li a{color:#666; text-decoration:none;}
+.bbs ul li a:hover{color:#aaf; text-decoration:underline;}
+
+.bbs p{position:absolute; 
+	   right:10px; top:10px;}
+
+.bbs p a{color:#aca; text-decoration:none;}
+.bbs p a:hover{text-decoration:underline;}
+
+
+
+
+
+
+
+
+

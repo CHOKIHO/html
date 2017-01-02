@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>애니메이션</title>
+
+	<style>
+		#ex{width:100px; height:100px;
+		    background-color:red;
+			border-radius:0;
+	 /*애니메이션을 적용할 속성:          배경색, 테두리*/
+			transition-property:background-color, border-radius;
+
+     -webkit-transition-property:background-color, border-radius;
+	 -moz-transition-property:background-color, border-radius;}
+
+		/*webkit : 크롬, 사파리 브라우저
+		  moz : 파이어 폭스
+		  o : 오페라 브라우저
+		  ms : 익스플로러*/
+
+		#ex:hover{background-color:blue;
+			      border-radius:50px;}
+	</style>
+
+ </head>
+
+ <body>
+	<div id="ex">
+	</div>
+ </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

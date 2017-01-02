@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+a{text-decoration:none; color:#666;}
+a:hover{color:#f30;}
+.box{width:183px; position:relative;
+     border:1px solid #ccc;
+	 font-size:0.75em;
+	 margin:20px 0 0 20px;}
+
+.box h3{padding:4px 0 0 4px;}
+.box ol{margin:5px 15px 10px 10px;}
+.box ol li{position:relative; 
+           padding:2px 18px 1px 18px;
+		   background:url(c:/web/image/icon_site.gif) 
+		   no-repeat 0 0;}
+
+.box ol span{display:block; position:absolute;
+             right:3px; top:6px;}
+
+.box ol li.no1{background-position:0 4px;}
+.box ol li.no2{background-position:0 -30px;}
+.box ol li.no3{background-position:0 -65px;}
+.box ol li.no4{background-position:0 -100px;}
+
+.box p{position:absolute; right:11px; top:4px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

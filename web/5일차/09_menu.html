@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>메뉴 만들기</title>
+
+	<style>
+		ul{width:130px;}
+		li{list-style:none;}
+		li a{text-decoration:none;/*a태그 밑줄제거*/
+			 background:#f30;
+			 display:block;
+
+			 /*a태그와 같은 인라인 요소에는 padding속성을 줄 수 없기 때문에 a태그를 블록요소로 변경하여 padding을 추가하였다.*/
+			 padding:5px;
+			 margin:3px 0;
+			 color:#fff;/*글씨색 변경*/
+			 }
+
+			 /*:hover는 마우스를 오버했을때 적용되는 속성*/
+			 li a:hover{background:#0c0;
+						color:#ff0;}
+	</style>
+
+ </head>
+
+ <body>
+	<div id="box">
+		<h1>메뉴</h1>
+
+		<ul>
+			<li><a href="#">COMPANY</a></li>
+			<li><a href="#">PRODUCT</a></li>
+			<li><a href="#">SERVICE</a></li>
+			<li><a href="#">COMMUNITY</a></li>
+		</ul>
+
+	</div>
+ </body>
+</html>

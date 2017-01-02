@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+	function chk(){
+		// 현재문서에서 아이디가 s_id인 요소를 검색한다.
+		var id = document.getElementById("s_id");
+
+		var id_v = id.value;//사용자가 입력한 id값
+
+		if(id_v == "" || id_v.trim().length == 0){
+			alert("아이디를 입력하세요");
+			id.value = "";// id요소의 값을 초기화 시킨다.
+			id.focus();
+			return; // 더 이상의 수행을 하지 않고 돌아간다.
+		}
+
+		var pw = document.getElementById("s_pw");
+		var pw_v = pw.value;
+
+		if(pw_v == "" || pw_v.trim().length == 0){
+			alert("비밀번호를 입력하세요");
+			pw.value = "";
+			pw.focus();
+			return; 
+		}
+		// id와 pw 모두 입력해야 수행하는 곳!!!!
+		alert("모두 입력하셨습니다.");
+	}
+  </script>
+ </head>
+ <body>
+  
+	<h1>유효성검사</h1>
+
+	<form name="f">
+		<label  for="s_id">ID:</label>
+		<input type="text" name="id" id="s_id"/> <br/>
+
+		<label for="s_pw">PW:</label>
+		<input type="password" name="pwd" id="s_pw"/><br/>
+
+		<input type="button" value="로그인" onclick="chk()"/>
+	</form>
+
+ </body>
+</html>

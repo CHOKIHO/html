@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>상대단위(em단위)</title>
+
+	<style>
+
+		/*부모자식과는 관계없이 모든 브라우저에서 18px로 고정*/
+		#a3{font-size:18px;}
+		#a4{font-size:18px;}
+
+		/*16 * 0.75*/
+		#a1{font-size:0.75em;}
+
+		/*부모의크기(16 * 0.75 = 12)에서 추가로 0.75를 곱한상태*/
+		#a2{font-size:0.75em;}
+
+	</style>
+
+ </head>
+
+ <body>
+	
+	<div id="a1">
+		<p>단위연습</p>
+		<div id="a2">
+			<p>단위연습</p>
+		</div>
+	</div>
+
+	<div id="a3">
+		<p>단위연습</p>
+		<div id="a4">
+			<p>단위연습</p>
+		</div>
+	</div>
+
+ </body>
+
+</html>

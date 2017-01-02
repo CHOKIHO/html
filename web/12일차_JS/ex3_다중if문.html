@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  - 다중if문의 구성<br/>
+	 if(조건식1)<br/>
+	    조건1에 만족할 때 수행하는 문장<br/>
+	 else if(조건식2)
+	    조건2에 만족할 때 수행하는 문장<br/>
+	 else if(조건식3)
+	    조건3에 만족할 때 수행하는 문장<br/>
+	 else
+	    조건1,2,3 모두 만족하지 않을 때 수행하는 문장<br/>
+
+<br/>
+ ** 조건식은 결과가 반드시 참(true) 아니면 거짓(false)이어야 한다.
+	<br/>
+
+	문제) 다음 빈칸에 점수를 입력하세요?<br/>
+	<input type="text" id="str"/>
+	<button onclick="exe()">확인</button>
+ </body>
+</html>
+<script>
+/* 여러 줄 주석처리
+   점수가 80이상이면 "우수",
+   그렇지 않고 60~79이면 "보통",
+   그렇지 않고 40~59이면 "낮음",
+   40이하는 "다시하세요"
+*/
+	function exe(){
+		var v1 = document.getElementById("str");
+
+		var v2 = v1.value;
+//논리 연산자 && : 그리고, || : 또는, ! : 부정
+/*		if(v2 >= 80)
+			alert("우수");
+		else if(v2 >= 60 && v2 <= 79)
+			alert("보통");
+		else if(v2 >= 40 && v2 <= 59)
+			alert("낮음");
+		else
+			alert("다시 입력하세요");
+*/
+		if(v2 >= 80)
+			alert("우수");
+		else if(v2 >= 60) // 이때 v2의 값의 최대값은 79
+			alert("보통");
+		else if(v2 >= 40) // 이때 조건1과 조건2 모두 거짓이므로
+			alert("낮음"); // v2의 최대값은 59가 된다.
+		else
+			alert("다시 입력하세요");
+	}
+</script>

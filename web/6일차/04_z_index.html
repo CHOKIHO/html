@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>z 인덱스</title>
+
+	<style>
+		p{border:1px solid black;
+		  padding:10px;
+		  width:80px;
+		  height:80px;
+		  position:absolute;}/*절대위치 : 0,0기준*/
+
+		.box1{background:yellow;
+		/*절대위치를 기준으로 100,100지점으로 이동*/
+			  left:100px; top:100px;
+			  z-index:3;}/*z인덱스 값이 클수록 화면 위에 표시*/
+
+		.box2{background:orange;
+		      left:120px; top:120px;
+			  z-index:2;}
+		
+		.box3{background:teal;
+		      left:140px; top:140px;
+			  z-index:1;}
+	</style>
+
+ </head>
+
+ <body>
+	<p class="box1">박스1</p>
+	<p class="box2">박스2</p>
+	<p class="box3">박스3</p>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+

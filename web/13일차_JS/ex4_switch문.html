@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+  /*
+	switch문 구성
+	 - switch(조건값){
+		  case 비교값1 : 
+		     처리문장1;
+			
+		  case 비교값2:
+		     처리문장;
+			 break;
+	   }// switch문의 끝
+
+	   switch문은 비교값을 찾아 해당 처리문장을 수행한다.
+	   만약! 비교값을 찾지 못하면 그냥 빠져나간다.
+	   비교값을 찾아서 처리문장을 수행할 때
+	   break문을 만날 때까지 수행함을 잊지말자!!
+*/
+		function test(){
+			//현재문서에서 아이디가 month인 요소를 검색한다.
+			var m = document.getElementById("month");
+
+			//month에 입력된 값을 가져온다.
+			var v1 = eval(m.value);
+			//eval()은 원래의 자료형으로 변환해주는 역활을 한다.
+
+			var str = "";
+			switch(v1){
+				case 1:
+				case 3:
+				case 5:
+				case 7:
+				case 8:
+				case 10:
+				case 12:
+				   str = "31일";
+				   break;
+				case 4:
+				case 6:
+				case 9:
+				case 11:
+				   str = "30일";
+				   break;
+				case 2:
+				   str = "29일";
+				   break;
+				default: //그 외의 값들
+					str = "해당없음";					
+			}//switch문의 끝
+
+			alert(str);
+		}
+
+		// switch문은 if문과 같이 비교문에 속한다.
+		// 이들의 차이점은 다음과 같다.
+		//  -if문 : 범위비교 if(v1 >= 10 && v1 < 20)
+		//  -switch문 : 같은 값 비교 
+  </script>
+ </head>
+ <body>
+	월명:<input type="text" id="month"/>
+	<button onclick="test()">확인</button>
+ </body>
+</html>

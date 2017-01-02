@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	div#box{
+		width: 200px;
+		height: 200px;
+		border: 1px solid black;
+		font-size: 45px;
+		font-weight: bold;
+		text-align: center;
+		line-height: 200px;
+	}
+  </style>
+  <script>
+  //현재 change함수가 호출될 때 1아니면 2, 또는 3 중
+  // 하나가 전달되어 온다. 그렇게 될 때 반드시
+  // change함수에서 인자를 받을 변수를 지정해야 한다.
+	function change(v1){
+		
+		//현재문서(document)에서 아이디가 box인 요소를 검색하여
+		//변수 box에 저장한다.
+		var box = document.getElementById("box");
+/*
+		if(v1 == 1)
+			box.style.backgroundColor = "#ff0000"; //"red";
+		else if(v1 == 2)
+			box.style.backgroundColor = "#00f";
+		else
+			box.style.backgroundColor = "yellow";
+*/
+		var color = "#fff";
+		if(v1 == 1)
+			color = "#ff0000";
+		else if(v1 == 2)
+			color = "blue";
+		else
+			color = "yellow";
+
+		box.style.backgroundColor = color;
+	}
+  </script>
+ </head>
+ <body>
+  
+	<h1>배경색 변경(숙제)</h1>
+
+	<button onclick="change(1)">빨강</button>
+	<button onclick="change(2)">파랑</button>
+	<button onclick="change(3)">노랑</button>
+	<br/><br/>
+	<div id="box">BOX</div>
+
+ </body>
+</html>

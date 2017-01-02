@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+	function test1(){
+		document.write("^^");
+	}
+	function test2(){
+		//document.write("1");
+		//document.write("2");
+
+		//현재문서에서 아이디가 box인 요소를 검색한다.
+		var box = document.getElementById("box");
+
+		//검색된 box라는 요소 안에 HTML문자열을 넣어준다.
+		box.innerHTML = "12";
+	}
+  </script>
+ </head>
+ <body>
+  <input type="button" value="버튼1" onclick="test1()"/>
+  <br/>
+  <button onclick="test2()">버튼2</button>
+  <br/>
+  <div id="box"></div>
+ </body>
+</html>

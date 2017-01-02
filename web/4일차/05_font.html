@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>font</title>
+
+	<style>
+		.a1{font-size:20px;}
+
+		/*normal:기본, italic:기울이기*/
+		.a2{font-style:italic;}
+
+		/*normal:기본, bold:두껍게*/
+		.a3{font-weight:bold;}
+
+		/*폰트를 준비하되, 지원되는 폰트가 아닐경우 웹브라우저의 표준적인 글씨체인 sans-serif를 사용하도록 정의해두면 됨*/
+		.a4{font-family:"돋움", dotum, "굴림", gulim,
+		    sans-serif;}
+		
+		/*소문자 만한 대문자*/
+		.a5{font-variant:small-caps;}
+
+		/*한꺼번에 속성을 정의하려면 순서를 지켜줘야함.
+		두께, 스타일, 스몰캡, 크기, 폰트*/
+		.a6{font:bold normal small-caps 18px "돋움",sans-serif;
+		    background:aqua;}
+
+		/*
+		두께 속성을 적용하려면 글씨체까지 함께 적용되어야 한다.
+		font:bold 18px "돋움"; (o)
+		font:bold 20px; (x)
+
+		사이즈만 정의하려면 font-size라고 정확히 명시
+		font-size:25px; (o)
+		font:25px; (x)
+		*/
+	</style>
+
+ </head>
+
+ <body>
+	<p class="a1">글자 크기</p>
+	<p class="a2">글자 스타일</p>
+	<p class="a3">글자 두께</p>
+	<p class="a4">글꼴</p>
+	<p class="a5">The end</p>
+	<p class="a6">글자 변경 속성 접근 순서</p>
+ </body>
+
+</html>

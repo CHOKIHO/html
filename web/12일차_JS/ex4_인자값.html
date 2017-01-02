@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ 
+  <style>
+    div#box{
+		width: 200px;
+		height: 200px;
+		font-size: 40px;
+		font-weight: bold;
+		border: 1px solid black;
+		text-align: center;
+		line-height: 200px;
+	}
+  </style>
+  <script>
+	function ex1(su){ //버튼들을 누를 때마다 수행하는 함수!!
+		
+		//현재문서에서 아이디가 box인 요소 검색!
+		var box = document.getElementById("box");
+
+		//검색된 box에 문자열을 넣어준다.
+		if(su == 1)
+			box.innerText = "첫번째";
+		else if(su == 2)
+			box.innerText = "두번째";
+
+		//su라는 인자는 현재 함수의 수행이 끝날 때 소멸된다.
+	}
+  </script>
+ </head>
+ <body>
+  
+	<h1>버튼을 누를 때 div의 내용을 변경하는 예제</h1>
+<!-- 하나의 함수를 여러 곳에서 호출하여 수행의 구분을
+   주려고 한다면 반드시 함수 호출 시 값을 전달해야 한다. 
+   (함수 호출시 값을 전달하는 것을 "인자값"이라 한다.) -->
+
+	<button onclick="ex1(1)">첫번째</button> &nbsp;
+	<button onclick="ex1(2)">두번째</button>
+	<br/>
+	<div id="box"></div>
+	
+
+ </body>
+</html>

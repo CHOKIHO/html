@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	div#box{
+		width: 200px;
+		height: 200px;
+		font-size: 40px;
+		font-weight: bold;
+		line-height: 200px;
+		border: 1px solid black;
+		text-align: center;
+	}
+  </style>
+  <script>
+	function ch(obj){
+		// 인자 obj는 select태그다.
+		//alert(obj.selectedIndex);
+		//selectedIndex는 선택된 option요소의 순서값을 의미하고
+		// 첫번째option이 0이다.
+
+		var box = document.getElementById("box");
+
+		//switch문을 이용하여 div의 배경색을 변경해보자!
+		switch(obj.selectedIndex){
+
+			case 1:
+				box.style.backgroundColor = "red";
+				break;
+			case 2:
+				box.style.backgroundColor = "blue";
+				break;				
+			case 3:
+				box.style.backgroundColor = "green";
+				//break;
+
+		}//switch문의 끝
+		
+	}
+  </script>
+ </head>
+ <body>
+	<h1>onchange</h1>
+
+	<select onchange="ch(this)">
+		<option selected>::색상선택::</option>
+		<option>빨강</option>
+		<option>파랑</option>
+		<option>초록</option>
+	</select>
+	<br/><br/>
+	<div id="box">BOX</div>
+
+ </body>
+</html>

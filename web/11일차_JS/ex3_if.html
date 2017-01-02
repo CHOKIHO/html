@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <script>
+	
+	//현재 문서에서 아이디가 id인 요소 검색!
+	//var id = document.getElementById("id");// 이러면 안된다.!!!!
+	//이것을 수행할 때는 body도 없고, 그 안의 내용도 없으므로
+	// id라는 아이디를 가진 요소를 검색하지 못한다.
+
+	function getData(){
+		//현재 문서에서 아이디가 id인 요소 검색!
+		var id = document.getElementById("id");
+
+		//현재문서에서 아이디가 id인 요소의 값(value)을 가져온다.
+		var v1 = id.value;
+
+		if(v1 >= 100){ //v1값이 100이상이라면..
+			alert("와~");//경고창
+		}// if문의 끝
+
+	}//함수의 끝
+
+  </script>
+ </head>
+ <body>
+  
+  <input type="text" id="id"/>
+  <button onclick="getData()">확인</button>
+
+ </body>
+</html>

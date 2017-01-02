@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	table{
+		width: 400px;
+		border-spacing: 0;
+		border-collapse: collapse;
+		border: 1px solid black;
+	}
+	table td{
+		border: 1px solid black;
+	}
+	.first{ /* 클래스가 first인 요소에 적용 */
+		width: 120px;
+	}
+	.last{
+		width: 60px;
+	}
+  </style>
+  <script>
+	function ch(id, obj){
+
+		var tr = document.getElementById(id);
+		
+		tr.style.backgroundColor = obj.value;
+	}
+  </script>
+ </head>
+ <body>
+	<h1>행 배경색 변경</h1>
+
+	<table>
+		<tbody>
+			<tr id="tr1">
+				<td class="first">1</td>
+				<td>2</td>
+				<td>3</td>
+				<td class="last">
+<!--
+	ch함수의 첫번째 인자는 현재 행의 id값을 직접 넣은 것이고,
+	두번째인자는 select태그 자신을 보내어
+	선택된 값(value)을 얻도록하기 위해 유도한 것이다.
+-->
+<select onchange="ch('tr1', this)">
+						<option>선택</option>
+						<option value="red">빨강</option>
+						<option value="#00f">파랑</option>
+						<option value="green">초록</option>
+					</select>
+				</td>
+			</tr>
+			<tr id="tr2">
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>
+					<select onchange="ch('tr2', this)">
+						<option>선택</option>
+						<option value="red">빨강</option>
+						<option value="blue">파랑</option>
+						<option value="green">초록</option>
+					</select>
+				</td>
+			</tr>
+			<tr id="tr3">
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>
+					<select onchange="ch('tr3', this)">
+						<option>선택</option>
+						<option value="red">빨강</option>
+						<option value="blue">파랑</option>
+						<option value="green">초록</option>
+					</select>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+ </body>
+</html>

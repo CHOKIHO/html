@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	div#box{
+		width: 500px;
+		height: 550px;
+		padding: 40px;
+		border:1px solid black;
+		font-size: 40px;
+		font-weight: bold;
+	}
+	input{
+		border: 1px solid black;
+		height: 30px;
+	}
+
+	input[type=button]{
+		border-radius: 5px;
+	}
+  </style>
+  <script>
+	function exe(){
+		//사용자가 입력한 단의 알아내기 위해
+		//현재 문서에서 아이디가 dan인 요소를 검색한다.
+		var dd = document.getElementById("dan");
+
+		//검색된 요소에서 사용자가 입력한 값(value)을 얻어낸다.
+		var dan = dd.value;
+		//만약 dan이 숫자인데 문자열로 인식되면
+		//숫자로 변경해야 한다.
+		//    - eval()
+		//    - parseInt()
+
+		//구구단의 결과를 하나의 문자열로 수집한다.
+		var str = "";
+		for(var i=1; i<=9; i++){
+			str += dan +"*"+ i + "=" + dan*i; 
+			str += "<br/>";
+		}//for문의 끝
+
+		//표현할 문자열을 수집한 str을
+		// div태그 즉, 아이디가 box인 div태그에 
+		// HTML문자열 형식으로 넣어준다.
+		box.innerHTML = str;
+
+		dd.value = "";
+	}
+  </script>
+ </head>
+ <body>
+  
+  단:<input type="text" id="dan" size="3"/>
+  <input type="button" onclick="exe()" value="확인"/>
+  <br/><br/>
+  <div id="box"></div>
+
+
+ </body>
+</html>

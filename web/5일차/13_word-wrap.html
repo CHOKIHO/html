@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="ko">
+ <head>
+  <meta charset="UTF-8">
+  <title>wordWrap</title>
+
+	<style>
+		body{font:12px Gulim; margin:20px;}
+		p{width:100px;
+		  padding:10px; 
+		  background:#69f;
+		  }
+
+		/*영문을 띄어쓰기 없이 길게 입력하면 width값을 주어도 박스 밖으로 튀어나오게 되는데, 이것을 가로폭에 강제로 맞춰 다음줄로 내려오도록 하는 기능이 word-wrap이다.*/
+		.ww{word-wrap:break-word;}
+	</style>
+
+ </head>
+
+ <body>
+
+	<p>
+		이 문장은 매우 긴 단어를 포함하고 있습니다.
+		wqeonvlkvbqwlvbkdjfbwejbvkwekvbdvnbsakdvjhwbekvbcnsabdmasbvdjvajusdbvksdjvbdsamnasdvjbwiuebvkwuevbuwerweqrhndsvbdksadvafbsnadvf
+	</p>
+
+	<p class="ww">
+		이 문장은 매우 긴 단어를 포함하고 있습니다.
+		wqeonvlkvbqwlvbkdjfbwejbvkwekvbdvnbsakdvjhwbekvbcnsabdmasbvdjvajusdbvksdjvbdsamnasdvjbwiuebvkwuevbuwerweqrhndsvbdksadvafbsnadvf
+	</p>
+
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

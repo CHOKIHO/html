@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	#myTable{
+		border: 1px solid black;
+		width: 500px;
+		border-spacing: 0;
+		border-collapse: collapse;
+	}
+
+	#myTable th, #myTable td{
+		/* 아이디가 myTable이라는 요소의 하위에 있는 th와
+		  td를 만나면 적용하는 스타일 */
+		border: 1px solid black;
+		height: 40px;
+	}
+
+	#myTable>thead>tr{
+		background-color: #B2EBF4;
+	}
+  </style>
+  <script>
+	function ch1(obj){
+		//현재 함수가 호출되는 곳이 tbody의 tr에서 호출한다.
+		//호출할 당시 this를 넣었는데 그것은 바로 tr자신이된다.
+		//즉, 인자 obj는 tr태그다.
+
+		obj.style.backgroundColor = "#D4F4FA";
+	}
+	function ch2(obj){
+		obj.style.backgroundColor = "#fff";
+	}
+  </script>
+ </head>
+ <body>
+	<h1>MouseOver / MouseOut</h1>
+	<table id="myTable">
+		<thead>
+			<tr>
+				<th>1999</th>
+				<th>2000</th>
+				<th>2001</th>
+				<th>2002</th>
+			</tr>
+		<thead>
+		<tfoot></tfoot>
+		<tbody>
+			<tr id="t1" onmouseover="ch1(this)" onmouseout="ch2(this)">
+				<td>111</td>
+				<td>2222</td>
+				<td>111</td>
+				<td>2222</td>
+			</tr>
+			<tr id="t2" onmouseover="ch1(this)" onmouseout="ch2(this)">
+				<td>454</td>
+				<td>2000</td>
+				<td>1811</td>
+				<td>2372</td>
+			</tr>
+			<tr onmouseover="ch1(this)" onmouseout="ch2(this)">
+				<td>1111</td>
+				<td>2782</td>
+				<td>1245</td>
+				<td>2002</td>
+			</tr>
+		</tbody>
+	</table>
+ </body>
+</html>

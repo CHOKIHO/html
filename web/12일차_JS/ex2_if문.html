@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  
+  제어문 : 비교문(if문), 반복문(for문), 탈출문 등...<br/>
+
+	비교문: if문, switch문<br/>
+	 - if문의 구성<br/>
+	 if(조건식)<br/>
+	    조건에 만족할 때 수행하는 문장<br/>
+<br/>
+ ** 조건식은 결과가 반드시 참(true) 아니면 거짓(false)이어야 한다.
+	<br/>
+
+	문제) 다음 빈칸에 10이상을 입력하세요?<br/>
+	<input type="text" id="str"/>
+	<button onclick="exe()">확인</button>
+
+
+ </body>
+</html>
+<script>
+	function exe(){
+		//현재 문서에서 아이디가 str인 요소를 찾는다.
+		var v1 = document.getElementById("str");
+
+		//찾은 str(v1)에서 값(value)을 가져와 변수 v2에 저장!
+		var v2 = v1.value;
+
+		//받아낸 str의 값(v2)이 10이상인지? 비교해 본다.
+		//비교연산자 : > 크다, < 작다, >= 크거나 같다,
+		//				<= 작거나 같다, == 같다, != 같지않다
+		if(v2 >= 10){
+		  alert("참! 잘했어요");
+		  alert("히히");
+		}else // 조건을 만족하지 않을 때
+		  alert("아니 아니");
+	}
+</script>
