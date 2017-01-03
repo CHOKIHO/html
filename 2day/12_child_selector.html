@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>clid Selector(자식선택자)</title>
+
+	<style type="text/css">
+
+		/* 자식선택자 '>'
+		   클래스나 아이디 직계 자식들만 해당됨
+		*/
+
+		#header > h1 { color:red; }
+		#section > h1 { color:blue; }
+		.section > h1 { color:green; } 
+	</style>
+
+ </head>
+ <body>
+
+	<div id="header">
+		<h1>자식 선택자</h1>
+
+		<div id="nav1">
+			<h1>Navigation1</h1>
+		</div>
+
+		<div id="nav2">
+			<h1>Navigation2</h1>
+		</div>
+		
+	</div>
+
+	<div class="section">
+		<h1>selector1</h1>
+		<h1>selector2</h1>
+	</div>
+ </body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>border</title>
+
+  <style type="text/css">
+
+/* 	
+	border속성은 3가지로 구성되었기때문에, 이중 한가지라도 빠질경우
+	각각 full name으로 적용해야함
+		p {border:1px solid blue; }
+
+	→	p {border-width:10px; border-color:blue; }
+*/
+
+	p {border-width:2px; border-color:#aaf; }
+	.box1 { border-style:none }
+	.box2 { border-style:hidden }
+	.box3 { border-style:dotted }
+	.box4 { border-style:dashed }
+	.box5 { border-style:solid }
+	.box6 { border-style:double }
+	.box7 { border-style:groove }
+	.box8 { border-style:ridge }
+	.box9 { border-style:inset }
+	.box10 { border-style:outset }
+
+	.div1 { border:5px solid blue; }
+	.div2 { border:5px solid red; width:200px; height=100px; }
+
+/* 	위 → 오른쪽 → 아래 → 왼쪽 순으로 여백이 지정됨 */ 
+	.div3 { border-width:5px 10px 15px 20px; border-style:solid; border-color:green}
+  
+  </style>
+
+ </head>
+ <body>
+
+	<p class="box1"> border none</p>	
+	<p class="box2"> border hidden</p>	
+	<p class="box3"> border dotted<p>	
+	<p class="box4"> border dashed</p>	
+	<p class="box5"> border solid <font color="red">젤 많이 사용</font></p>	
+	<p class="box6"> border double</p>	
+	<p class="box7"> border groove</p>	
+	<p class="box8"> border ridge</p>	
+	<p class="box9"> border inset</p>	
+	<p class="box10"> border outset</p>	
+
+	<div class="div1">
+		<p>div 테두리 넣기</p>
+	</div>
+	<div class="div2">
+		<p>div 테두리 넣기</p>
+	</div>
+	<div class="div3">
+		<p>div 테두리 넣기</p>
+	</div>
+  
+ </body>
+</html>
