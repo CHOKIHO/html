@@ -1,0 +1,3 @@
+INDEX VERSION 1.129+C:\html_study\work\.metadata\.plugins\org.eclipse.jdt.core
+280060055.index
+1496099176.index

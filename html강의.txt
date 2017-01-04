@@ -1,0 +1,31 @@
+
+HTML수업
+
+선생님 : 오경주 (adoins_oh@hanmail.net)
+
+
+2017.1.4 1일차수업
+
+1. 이클립스 폴더 복사 (html_study)
+2. apache.org 접속 (8버전 다운로드)
+
+   -톰캣서버 추가
+   window-preference-Server-Runtime Environment-톰캣서버 add
+   
+   -인코딩
+   window-preference-Workspace-Text File encoding-utf8
+   
+   -window-preference-Web
+   CSS files, HTML Files, JSP Files - utf8 설정
+   
+   -General-Appearance-Colors and Fonts
+   Basic 기본폰트설정
+   
+3. 이클립스 dynamic web 프로젝트 생성
+   -Java Resources (DAO, DTO, VO, Controller)
+   -build
+   -WebContent (META-INF, WEB-INF) - HTML파일생성
+   
+4. window-preference-General-Web Browser 크롬 추가   
+
+
