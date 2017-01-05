@@ -4,94 +4,23 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 
+<!-- 외부 css파일 연결 -->
+<link rel="stylesheet" type="text/css" href="../css/header.css">
+<link rel="stylesheet" type="text/css" href="../css/footer.css">
+
 <style type="text/css">
 
-	div#wrap { 	/*div태그중 id가 wrap인경우만 적용*/
-				
-				width:970px;
-				height:100%;
-				/* border:1px solid red; */
-				margin:0 auto; }    /* 가운데 정렬 */ 
-			
-	div#header {
-				width:100%;
-				height:140px;
-				position:relative;
-				/* border:1px solid blue; */
-			}
-			
-	div#header>h1 {
-				width:181px;
-				height:59px;
-				background-image:url("../img/logo.png");
-				background-repeat:no-repeat; /*바둑판 배열 제거*/
-				text-indent:-9999px;
-				margin:0;
-				padding:0;	}
-	
-	div#header .gnb {
-				display:inline;
-				position:absolute;
-				bottom:0;
-				width:100%;
-				height:50px;
-				overflow:hidden;				/* 표현 영역을 벗어나면 숨기기  */
-				margin:0;
-				padding:0;
-				border-left: 1px solid #fff;
-
-				/* border:1px solid blue; */ 
-			  }
-
-	div#header .gnb>li {
-				float: left;	/* 띄어서 자신은 왼쪽 (다음에 오는 태그를 오른쪽으로 붙이기된다.)*/	  
-				width:194px;
-				height:100%;
-				background-color:#ff5001;
-				list-style: none;
-				/* border:1px solid blue; */
-				/* text-align: center; */
-			}
-			
-	div#header .gnb>li>a {
-				display: block;
-				width:100%;
-				text-align: center;
-				text-decoration: none;
-				height:100%;
-				line-height: 50px;
-	 }
-	 
-	 div#header .gnb>li>a:hover {	background:#e24c09;
-				color:#ff0     }
-
-
-				
-	.menu {		
-				display:inline-block;							/*인라인-블록레벨 지정*/
-				height:20px;
-				color:#fff;
-				font-weight: bold;
-				font-size: 16px;
-				background-image: url("../img/gnb_bult.png");  /*  통이미지 로딩하고 잘라서 사용  */
-				background-repeat:no-repeat;
-				margin-top:15px;
-				padding-left: 30px;
-				line-height: 20px;
-
-			}
-	.m1 {	background-position: 0 0; 	  }		/*  통이미지 자르기 */
-	.m2 {	background-position: 0 -22px; }
-	.m3 {	background-position: 0 -44px; }
-	.m4 {	background-position: 0 -66px; }
-	.m5 {	background-position: 0 -88px; }		
-			
+	#contents {
+		width:970px;
+		height:360px;
+		margin:auto;
+	}
 
 	.main_news {
 	
 			width:auto;
 			height: 240px;
-			padding: 40px 35px;
+			padding: 20px 35px;
 			background-color: #efefef;
 		}
 		
@@ -100,8 +29,6 @@
 			overflow:hidden;
 			float:left;
 			margin: 0 27px;
-			
-			
 		}
 		
 	.title {
@@ -113,9 +40,7 @@
  */			
 			background: url(../img/main_title.png) no-repeat;
 			text-indent: -9999px;
-			
 		}
-	
 
 /* 
  	.f1 p.title {   background-position: 0 0; }
@@ -148,7 +73,6 @@
 			font-size: 12px;
 			color:#777;
 			display:inline-block;
-		
 	}
 	
 	.writer {
@@ -172,24 +96,148 @@
 		font-size: 12px;
 	}		
 	
-	.bg1 {
+	.fclear {
+		display: block;
+		float: none;
+		clear: both;
+	}
+	
+	
+	.news_type01 .thum_img {
+		display:inline-block;
+		width:245px;
+		height:150px;
+		overflow:hidden;
+ 		position:relative;
+	}
+	
+	.btn_play {		/*	속성들간 순서도 중요하네  display와 width,height가 순서가 바뀌면 결과가 이상해진다.*/
+	    width: 52px;
+	    height: 51px;
+	    display: inline-block;
+		background: url(../img/icon_play.png) no-repeat;
+ 		position:absolute;
+		top:48px;
+		left:96px;
+	}
+	
+	.main_board {
+		width:auto;
+		padding:50px,35px;
+
+		clear:both;
+	}
+	
+	.main_board .board_type01 {
 		position:relative;
 		width:245px;
-		height:148px;
-		/* z-index: 1; */
-	}
-	.bg1 .btn_play {
-		position:absolute;
-	    top: 0;
-	    left: 0;
-	    width: 100%;
-	    height: 100%;
-	    display: none;
+		overflow:hidden;
+		float:left;
 		
-		/* background-image: url("../img/icon_play.png"); */
-		background: url(../img/icon_play.png) no-repeat;
-/* 		z-index: 2 */		
 	}
+	
+	.main_board .b1 {
+		margin-left:18px;
+	}	
+	
+	.main_board .b2 {
+		margin-left:82px;
+	}
+	
+	.main_board .b3 {
+		width:285px;
+		margin-top:20px;
+		margin-left:65px;
+		margin-bottom:10px;
+	}
+	
+	.main_board .board_type01 .title {
+		border-bottom:1px solid #cfcfcf;
+		margin-bottom:7px;
+	}
+	
+/* 	.main_board .board_type01 .title */
+	
+	.board_type01:nth-child(1) .title { background-position:0 -60px;}
+	.board_type01:nth-child(2) .title { background-position:0 -80px;}
+	
+	.main_board .board_type01 .view {
+		position:absolute;
+		right:0;
+		top:15px;
+	}
+	
+	.main_board .board_type01 .notice {
+		list-style:none;
+		margin:0;
+		padding:0;
+		font-size:12px;
+	}
+	
+	.main_board .board_type01 .notice li {
+		position:relative;
+		height:23px;
+		line-height:23px;
+	}
+	
+	.main_board .board_type01 .notice li>a {
+			display:inline-block;
+			width:180px;
+			text-decoration:none;
+	}
+	
+	/* 날짜정보는 글꼴의 크기가 12px로 지정되어야하며, 우측정렬되어야함 */
+	
+	.main_board .board_type01 .notice li .date {
+		position:absolute;
+		right:0;	/* 우측으로부터 0만큼 (우측 정렬) */
+		font-size:12px;
+	}
+	
+	.main_board .board_type01 .article {
+		display:block;
+		overflow:hidden;
+	}
+	
+	.main_board .board_type01 .article .thum_img {
+		float:left;
+		display:inline-block;
+		width:67px;
+		height:67px;
+	}
+
+
+
+	.main_board .board_type01 .article .src {
+		float:right;
+		display:inline-block;
+		width:165px;
+		font-size:12px;
+		margin-left:10px;
+	}
+	
+	.main_board .board_type01 .banner {
+		display:inline-block;
+		width:137px;
+		height:118px;
+		border:1px solid #cfcfcf;
+		background: url(../img/main_banner.png) no-repeat;
+		text-indent:-9999px;
+	}
+	
+	.main_board .board_type01 .b01 {
+		background-position:0 0;
+	}
+
+	.main_board .board_type01 .b02 {
+		background-position:-137px 0;
+	}
+
+
+	 
+	 
+				
+
 		
 </style>
 
@@ -203,7 +251,7 @@
 			<h1>SK Together</h1>
 			<ul class="gnb">
 			 						<!-- 2중클래스 사용하기 -->
-				<li><a href="#"><span class="menu m1">기브유</a></span></li>
+				<li><a href="#"><span class="menu m1">기브유</span></a></li>
 				<li><a href="#"><span class="menu m2">위드유</span></a></li>
 				<li><a href="#"><span class="menu m3">스마트전통시장</span></a></li>
 				<li><a href="#"><span class="menu m4">BRAVO!</span></a></li>
@@ -230,7 +278,7 @@
 				<div class="news_type01 f1">
 					<p class="title">기브유 후원참여</p>
 					<a href="#">
-						<span>
+						<span class="thum_img">
 							<img alt="기사사진" src="../img/@img01.png">	
 						</span>
 						
@@ -247,7 +295,7 @@
 				<div class="news_type01 f2">
 					<p class="title">기브유 후원금 현황</p>
 					<a href="#">
-						<span>
+						<span class="thum_img">
 							<img alt="기사사진" src="../img/@img02.png">	
 						</span>
 						<span class="ellip subject">
@@ -262,9 +310,9 @@
 				<div class="news_type01 f3">
 					<p class="title">기브유 나눔영상</p>
 					<a href="#">
-						<span>
+						<span class="thum_img"><!--배경이미지와 재생버튼 겹치기위해-->
 							<img class="bg1" alt="기사사진" src="../img/@img03.png">	
-							<span class="btn_play" title="동영상재생">
+							<span class="btn_play" title="동영상재생"><a href="#"></a>
 							</span>
 						</span>
 						<span class="ellip subject">
@@ -277,17 +325,83 @@
 				</div>
 				
 				
-				
 			</div>
 			
 			
+			<div class="main_board">
+
+				<!--공지사항 -->
+	
+				<div class="board_type01 b1">
+					<p class="title">공지사항</p>
+					<span class="view"><a href="">더보기</a></span>
+					
+					<ul class="notice">
+						<li><a href="">T-together 리뉴얼 오픈입니다.</a><span class="date">2017.01.05</span></li>
+						<li><a href="">INCREPAS 행사 당첨자 발표.</a><span class="date">2017.01.02</span></li>
+						<li><a href="">인크레파스 교육센터 시스템 안내.</a><span class="date">2017.01.01</span></li>												
+					</ul>
+
+				</div>
+				
+				<!--공지사항 끝 -->
+				
+				<!--트위터 -->				
+				<div class="board_type01 b2">
+					<p class="title">T-together트위터</p>
+					<span class="view"><a href="">더보기</a></span>
+					<a href="" class="article">
+						<span class="thum_img"><img src="../img/@img04.png"/></span>
+						<span class="src">[캠폐인] 햇살이 따스한 봄날이 다가옵니다. 그리고 지나갑니다. 여름이 왔어요~!</span>
+					</a>
+				</div>
+
+				<!--트위터 끝 -->
+				
+				<!--배너 -->
+				<div class="board_type01 b3">
+					<span class="banner b01"><a href="">T-together와 함께할 기관/단체를 모십니다.</a></span>
+					<span class="banner b02"><a href="">T-together 이젠 모바일로 함께해요</a></span>
+				</div>
+
+				<!--배너 끝 -->
+			</div>
+		
 		</div>
 		<!-- 콘텐츠 영역 -->
 		
+		<!-- 풋터시작 -->
 		
-	
+		<div id ="footer">
+			<div class="footer_area">
+				<ul class="foot_guide">
+					<li><a href="">개인정보취급방침</a></li>
+					<li><a href="">웹회원 이용약관</a></li>
+					<li><a href="">책임한계와 법적고지</a></li>
+					<li><a href="">이메일 무단수집 거부</a></li>															
+				</ul>
+				<address>서울시 중구 을지로 555
+				          대표이사: 마루치 
+				          고객상담: 국번없이 114 혹은 02-1234-1234 (평일 09:00~17:00)
+				</address>
+				<p class="copyright">Copyright &copy; 2012 SK Telecom All rights reserved</p>
+			</div>
+		</div>
+		
+		
+		<!-- 풋터 끝 -->
 	</div>
 	
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

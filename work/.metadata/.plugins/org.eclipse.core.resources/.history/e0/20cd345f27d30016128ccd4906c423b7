@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+	<!-- 외부 css파일 연결 -->
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	
+	<style type="text/css">
+	
+	#contents {
+		width:900px;
+		height:auto;
+		margin:auto;
+		padding-top:30px;
+	}
+	
+	/* 탭영역 */
+	#contents .tab_type {
+		padding:10px 0;
+	}
+	
+	#contents .tab_type ul {
+		list-style:none;
+		margin: 0;
+		padding: 0;
+	}
+	
+	#contents .tab_type ul li {
+		float:left;
+		width:288px; /* 세로바 1px 양쪽 감안*/
+		height:35px;
+		border:1px solid #767676;
+		border-right: 1px solid #fff;
+		background: #767676;
+	}
+	
+	#contents .tab_type ul li a {
+		display:block;
+		width:100%;
+		height: 100%;
+		color:#fff;
+		font-weight: bold;
+		font-size: 15px;
+		text-align: center;
+		line-height: 35px;
+	}
+	
+	#contents .tab_type ul li.selected { /* li태그중 class가 selected인 것만 적용 */
+		background: #fff;
+		border:1px solid #ff4f00;
+		border-bottom: none;
+	}
+
+	#contents .tab_type ul li.selected>a{ /* li태그중 class가 selected인 것의 a태그 */
+		color:#ff4f00;
+	}
+
+	.tab_content {
+		padding-top:30px;
+		line-height:1.5em;  /* 부모태그의 라인높이의 1.5배 */
+		display: none;		/* 숨기기 (영역도 같이 없어짐) */
+	}
+	
+	.show {
+		display:block;		/* 보이기 */
+	}
+	
+	#contents .tab_type ul li>a{ 
+		text-decoration: none;
+	}
+
+
+	</style>
+	
+	<script type="text/javascript">
+		//변수선언
+		var str=10;
+		//함수선언
+		function exe(n) {
+			
+			//.show 클래스 지정하기
+			//현재 문서에서 id가 tab1, tab2, tab3인 태그들을 찾는다.
+			var tab1 = document.getElementById("tab1");
+			var tab2 = document.getElementById("tab2");
+			var tab3 = document.getElementById("tab3");
+			
+			//검색된 div태그
+			tab1.className="tab_content";
+			tab2.className="tab_content";
+			tab3.className="tab_content";
+
+			var li1 = document.getElementById("t1");
+			var li2 = document.getElementById("t2");
+			var li3 = document.getElementById("t3");	
+			
+			li1.className="";
+			li2.className="";
+			li3.className="";
+		
+			if (n == 1) {
+				tab1.className="tab_content show";
+				li1.className="selected";
+				
+			} else if (n == 2) {
+				tab2.className="tab_content show";
+				li2.className="selected";
+			} else {
+				tab3.className="tab_content show";
+				li3.className="selected";
+			}
+		}
+		
+	</script>
+
+</head>
+<body>
+	<div id="wrap">	
+
+		<!-- 상단영역 -->	
+		<div id="header">
+			<h1>SK Together</h1>
+			<ul class="gnb">
+				<li><a href="#"><span class="menu m1">기브유</span></a></li>
+				<li><a href="#"><span class="menu m2">위드유</span></a></li>
+				<li><a href="#"><span class="menu m3">스마트전통시장</span></a></li>
+				<li><a href="#"><span class="menu m4">BRAVO!</span></a></li>
+				<li><a href="#"><span class="menu m5">SKT와 사회공헌</span></a></li>
+			</ul>
+			
+		</div>
+		<!-- 상단영역 끝 -->
+		
+		<!-- 컨텐츠 영역 시작 -->
+		<div id="contents">
+			<p>
+				<img alt="" src="../img/@img05.png"/>
+			</p>
+
+			<div class="tab_type">
+				<ul>
+					<!--
+						a태그는 기본적으로 경로(url)
+						자바함수호출시 : javascript:함수명();
+					
+					-->
+					<li id="t1"><a href="javascript:exe(1);">위드유</a></li>
+					<li id="t2" class="selected"><a href="javascript:exe(2);">위드유 영상</a></li>
+					<li id="t3"><a href="javascript:exe(3);">위드유 대화</a></li>
+				</ul>
+			</div>
+		 	<div id="tab1" class="tab_content">
+		 		ETRI가 'CES 2017'에서 전시하는 '에너지 컵(E-컵)'의 모습. 스마트 기기의 위치, 방향에 관계없이 3차원으로 무선 충전이 가능한 장치다. 
+		 	</div>
+		 	<div id="tab2" class="tab_content show">
+		 		한국전자통신연구원(ETRI)은 5일부터 8일까지 미국 라스베이거스 컨벤션센터에서 열리는 'CES 2017'에 7건의 최신 정보통신기술(ICT)을 전시한다고 4일 밝혔다.
+		 		전시되는 기술은 특정 공간 내에서 무선충전이 가능한 'E-컵' 기술을 비롯해 무안경 초다시점 콘텐츠 획득·재현 기술, 헬스케어 및 커넥티드카 국제표준 기술 등이다.
+		 	</div>
+		 	<div id="tab3" class="tab_content">
+		 		ETRI는 전시부스에서 어보브반도체와 함께 사물웹(WoT) 솔루션을 전시하고, 엘컴텍과는 스마트홈을 위한 통합관리제어 플랫폼 기술을 선보인다. 시공테크와는 다시점 디스플레이를 위한 실시간 영상 다중화 기술을, 화신·MCNEX 등과는 차량용 레이더 신호처리 SW를 미국 현지에서 각각 시연한다.
+		 		ETRI는 전시회에서 기술에 관심 있는 해외 기업을 초청하는 등 기술사업화 확산을 위한 기술이전 상담도 진행한다. 
+		 	</div>
+		
+		</div>
+
+		<!--  컨텐츠 영역 끝 -->
+		
+		
+		<!-- 풋터시작 -->
+		
+		<div id ="footer">
+			<div class="footer_area">
+				<ul class="foot_guide">
+					<li><a href="">개인정보취급방침</a></li>
+					<li><a href="">웹회원 이용약관</a></li>
+					<li><a href="">책임한계와 법적고지</a></li>
+					<li><a href="">이메일 무단수집 거부</a></li>															
+				</ul>
+				<address>서울시 중구 을지로 555
+				          대표이사: 마루치 
+				          고객상담: 국번없이 114 혹은 02-1234-1234 (평일 09:00~17:00)
+				</address>
+				<p class="copyright">Copyright &copy; 2012 SK Telecom All rights reserved</p>
+			</div>
+		</div>
+		
+		<!-- 풋터 끝 -->
+		
+
+	</div>
+</body>
+</html>

@@ -29,3 +29,16 @@ HTML수업
 4. window-preference-General-Web Browser 크롬 추가   
 
 
+2017.1.5 2일차수업
+
+1.box개념
+  1) 인라인레벨 (크기조절불가)- a, span
+  2) 블록레벨 (수평배치불가 → float으로 해결) - div, li
+
+2. 인라인 레벨안에 블록레벨을 담을수없다 (강제분리됨)
+
+
+
+
+
+
