@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="b3" key="selection"/>
+		<item value="form" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
-			<item value="b3"/>
-			<item value="main_news"/>
-			<item value="contents"/>
-			<item value="margin-"/>
-			<item value="cont"/>
-			<item value="content"/>
-			<item value="ellip"/>
+			<item value="form"/>
+			<item value="subject"/>
+			<item value="img"/>
 			<item value="fclear"/>
+			<item value=".btn a"/>
+			<item value="login_area"/>
+			<item value="login"/>
+			<item value="btnArea_right"/>
 		</list>
 		<list key="replacehistory">
 		</list>
@@ -24,7 +24,7 @@
 		<item value="288" key="DIALOG_WIDTH"/>
 		<item value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕" key="DIALOG_FONT_NAME"/>
 		<item value="390" key="DIALOG_HEIGHT"/>
-		<item value="409" key="DIALOG_X_ORIGIN"/>
-		<item value="355" key="DIALOG_Y_ORIGIN"/>
+		<item value="872" key="DIALOG_X_ORIGIN"/>
+		<item value="225" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>개인회원가입</title>
+
+	<!--  외부 CSS파일 연결 -->
+	<link rel="stylesheet" type="text/css" href="../css/header.css">
+	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+
+	<style type="text/css">
+	
+	div#contents{
+		width: 900px;
+		height: auto;
+		margin: auto;
+		padding-top: 30px;
+	}
+
+	/*일반개인회원가입*/
+	
+	.sub_title{
+		background: url("../img/sub_title.png") no-repeat;
+		text-indent: -9999px;
+	}
+	
+	h1.title01{
+		background-position: 0  0;
+		height: 30px;
+	}
+	
+	.member {
+		margin-top: 20px;
+	}
+	.mem_regi {
+
+		line-height: 15px;
+		font-weight: bold;
+		font-size: 12px;
+	}
+	
+	
+	.person_info {
+		padding: 50px; 
+	}
+	
+	.tab {
+		border: 1px solid green;
+	}
+	
+	tr, td {
+		border: 1px solid green;
+	}
+	
+
+	</style>
+</head>
+<body>
+
+	<div id="wrap">
+		<!-- 상단영역 -->	
+		<div id="header">
+			<h1>SK Together</h1>
+			<ul class="gnb">
+				<li><a href="#"><span class="menu m1">기브유</span></a></li>
+				<li><a href="#"><span class="menu m2">위드유</span></a></li>
+				<li><a href="#"><span class="menu m3">스마트전통시장</span></a></li>
+				<li><a href="#"><span class="menu m4">BRAVO!</span></a></li>
+				<li><a href="#"><span class="menu m5">SKT와 사회공헌</span></a></li>
+			</ul>
+			
+		</div>
+		<!-- 상단영역 끝 -->
+		
+		<!-- 컨텐츠영역 시작 -->
+		
+		<div id="contents">
+			<h1 class="sub_title title01">
+				일반개인회원가입
+			</h1>
+			<div class="member">
+				<span class="mem_regi">
+					사회공헌 포탈 서비스인 T-together는 누구나 참여할 수 있으며 가입하시면 
+					GiveU(기부)나 자원봉사 참여 등 다양한 서비스 이용이 가능합니다.
+					이용 프로그램에 따라 필요한 추가정보를 요청할 수 있습니다.
+				</span>
+			</div>
+			
+			<div class="peson_ment">
+				<span class="ment">개인회원정보를 입력해 주세요</span>
+				<span class="mendertory">필수입력사항</span>
+			</div>
+			
+			<div class="person_info">
+			
+			<table id="pinfo" class="tab">
+				<tr>
+					<td>이름</td>
+					<td>마루치</td>
+				</tr>
+				<tr>
+					<td>아이디</td>
+					<td>6~12자리의 영문,숫자(혼용가능)을 입력해주세요
+						<input type="text" id="id" name="id"> <input type="button" id="dup">
+					</td>
+				</tr>
+				<tr>
+					<td>비밀번호</td>
+					<td>안전을 위해 10자 이상의 문자조합(영문대문자+숫자 또는 기호(!@#$%)를 입력해 주세요
+						<input type="password" id="pw1" name="pw1">
+					</td>
+				</tr>
+				<tr>
+					<td>비밀번호확인</td>
+					<td>입력하신 비밀번호 확은을 위해 다시한번 입력해 주세요
+					<input type="password" id="pw2" name="pw2">
+					</td>
+				</tr>
+				<tr>
+					<td>관심부가대상</td>
+					<td>
+						<div class="pims_textarea_ok">
+							<input type="checkbox" id="ch01" name="child">
+							<label for="ch01">아동</label>
+							
+							<input type="checkbox" id="ch02" name="old">
+							<label for="ch01">노인</label>
+							
+							<input type="checkbox" id="ch03" name="health">
+							<label for="ch01">건강</label>
+							
+							<input type="checkbox" id="ch04" name="study">
+							<label for="ch01">학습</label>
+							
+							<input type="checkbox" id="ch05" name="culture">
+							<label for="ch01">문화</label>
+						</div>
+					</td>
+				</tr>
+			</table>
+			
+			</div>
+			
+			
+		</div>
+
+		<!-- 컨텐츠영역 끝 -->
+		
+		
+		<!-- 풋터시작 -->
+		
+		<div id ="footer">
+			<div class="footer_area">
+				<ul class="foot_guide">
+					<li><a href="">개인정보취급방침</a></li>
+					<li><a href="">웹회원 이용약관</a></li>
+					<li><a href="">책임한계와 법적고지</a></li>
+					<li><a href="">이메일 무단수집 거부</a></li>															
+				</ul>
+				<address>서울시 중구 을지로 555
+				          대표이사: 마루치 
+				          고객상담: 국번없이 114 혹은 02-1234-1234 (평일 09:00~17:00)
+				</address>
+				<p class="copyright">Copyright &copy; 2012 SK Telecom All rights reserved</p>
+			</div>
+		</div>
+		
+		<!-- 풋터 끝 -->			
+	</div>
+
+
+
+</body>
+</html>
