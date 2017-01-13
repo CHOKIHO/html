@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Bootstrap Core CSS -->
+<link href="./css/bootstrap.css" rel="stylesheet">
+<!-- DataTables CSS -->
+<link href="./css/dataTables.bootstrap.css" rel="stylesheet">
+<style type="text/css">
+	
+	#table{
+		width: 500px;
+	}	
+	
+	td.ch{
+		width: 30px;
+	}
+	
+	.tr{
+		text-align: right;
+	}
+	.code{
+		width: 50px;
+	}
+</style>
+
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-6">
+			<div  class="panel  panel-primary">
+				<div class="panel-heading">
+		            My Panel
+		        </div>
+				<div class="panel-body">
+		            <div class="table-responsive table-bordered">
+                       <table class="table">
+                           <thead>
+                               <tr>
+                                   <th class="code">코드</th>
+                                   <th>교과목 분류명</th>
+                               </tr>
+                           </thead>
+                           <tfoot>
+                           	<tr>
+                           		<td colspan="2"  class="tr">
+                           			(어쩌구 저쩌구) <button type="button" class="btn btn-info">추가</button>
+                           		</td>
+                           	</tr>
+                           </tfoot>
+                           <tbody>
+                               <tr>
+                                   <td>1</td>
+                                   <td>Mark</td>
+                               </tr>
+                               <tr>
+                                   <td>2</td>
+                                   <td>Jacob</td>
+                               </tr>
+                               <tr>
+                                   <td>3</td>
+                                   <td>Larry</td>
+                               </tr>
+                           </tbody>
+                       </table>
+                   </div>
+		        </div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+</html>

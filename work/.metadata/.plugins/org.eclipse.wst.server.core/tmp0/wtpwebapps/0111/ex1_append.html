@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<style type="text/css">
+	
+	#box { 
+		width: 600px;
+		height: 500px;
+		padding: 10px;
+		border: ipx solid bule;
+	}
+	
+	.test {
+		background: green;
+		color: red;
+		width:80%;
+		margin: 10px auto;
+	}
+
+</style>
+<script type="text/javascript">
+	
+	$(function() {
+		$("input[type=button]").bind("click", function(){
+			
+			$("<p class='test'>p요소</p>").appendTo("#box");
+		});	
+	});
+
+
+
+</script>
+
+</head>
+<body>
+	<input type="button" value="확인"/>
+	<div id="box">BOX</div>
+</body>
+</html>

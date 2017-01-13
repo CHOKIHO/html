@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+		
+	function test(ff) {
+		
+		var yy = ff.yy.value;
+		
+		alert(yy);
+		
+		
+		
+		
+	}
+	
+</script>
+
+</head>
+<body>
+	<form action="">
+		<fieldset>
+			<legend>생년월일</legend>
+			<label for="b_year">출생년도</label>
+			<input type="text" id="b_year" name="yy">
+			<input type="button" value="확인" onclick="test(this.form)">
+		</fieldset>
+	</form>
+</body>
+</html>

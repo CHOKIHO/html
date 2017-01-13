@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 추가</title>
+
+<style type="text/css">
+	
+	body table {
+		width:500px;
+		border: 1px solid blue;
+		border-collapse: collapse;
+	}
+	body table th, body table td {
+		border: 1px solid blue;
+		padding: 4px;
+		//text-align: center;
+	}
+	
+	body table>thead th {
+		background-color: #cdcdcd;
+	}
+	
+	body table>thead .fr {
+		text-align: right;
+	}
+	
+	.no { width: 70px;}
+	
+	
+</style>
+
+<script type="text/javascript">
+
+	var idx=1;
+	
+	//테이블 Row 추가 함수
+	function addRow() {
+		
+		//추가할 td를 생성한다.
+		var td1 = document.createElement("td");
+		var td2 = document.createElement("td");
+		var td3 = document.createElement("td");
+		var td4 = document.createElement("td");
+		
+		var txt1 = document.createElement("input");
+		txt1.type="text";
+		txt1.name="lic";
+
+		var txt2 = document.createElement("input");
+		txt2.type="text";
+		txt2.name="pos";
+
+		var btn = document.createElement("input");
+		btn1.type="button";
+		btn1.name="btn";
+		btn1.value="삭제";
+		
+		/* td4.innerHTML = "<input type='text' value='삭제' onclick='deleteRow(this)'/>"; */   /* 문자열로 지정 */
+		
+		//① td객체에 문자열지정 (innerHTML, innerText)
+		td1.innerHTML = idx++;
+		td2.appendChild(txt1);
+		td3.appendChild(txt2);
+		td4.appendChild(btn);
+		
+		//② 추가할 tr을 생성
+		var tr = document.createElement("tr");
+		
+		//③ tr 엘리먼트에 td엘리먼트 추가
+		tr.appendChild(td1);
+		tr.appendChild(td2);
+		tr.appendChild(td3);
+		tr.appendChild(td4);
+	
+		//④ row를 추가할 table 검색  
+		var tab = document.getElementById("myTable");
+		
+		//⑤ tbody를 찾기 (DOM구조: 자식들 태크는 배열로 저장되어 있음)
+		var tbody = tab.children[1];
+		
+		//⑥ tbody에 tr추가
+		tbody.appendChild(tr);
+		
+		//⑦ sytle 추가
+		tr.style.textAlign = "center";
+		
+		
+		var rowNo=0;
+		
+		tr.onmouseover = function() {  //익명함수 사용 (함수안에서 함수사용) 
+		
+			rowNo = this.rowIndex;				//전역변수 이용
+			//table.rowNo = this.rowIndex;    //테이블변수 이용  	
+			
+		};
+		
+		btn.onclick = function() {
+
+			//alert(rowNo);
+			tab.deleteRow(rowNo);
+
+		};
+	}
+	
+	
+</script>
+
+</head>
+<body>
+	<h1>테이블 행추가/삭제</h1>
+	
+	<form>
+	<table id="myTable">
+		<thead>
+			<tr class="fr">
+				<td colspan="4">
+					<input type="button" value="추가" onclick="addRow()"/>
+				</td>
+			</tr>
+			<tr>
+				<th class="no">번호</th>
+				<th>자격증</th>
+				<th>발령처</th>
+				<th class="no">삭제여부</th>
+			</tr>
+		</thead>
+		<tbody>	
+		<!-- 테이블 행추가할 body 구역 -->
+		</tbody>	
+		<tfoot>
+			<tr>
+				<td colspan="4">
+				<input type="button" value="보내기"/>
+				<input type="button" value="취소"/>
+				</td>
+			</tr>
+		</tfoot>
+	</table>
+	</form>
+
+</body>
+</html>

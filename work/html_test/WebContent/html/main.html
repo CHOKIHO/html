@@ -16,6 +16,13 @@
 		margin:auto;
 	}
 
+	#gap {
+		width:970px;
+		height:30px;
+		margin:auto;
+	}
+		
+	
 	.main_news {
 	
 			width:auto;
@@ -235,11 +242,72 @@
 
 
 	 
+	.none{
+		display: none;
+	}
+	
+	.show{
+		display: block;
+	}	 
 	 
-				
+	#box1,  #box2 {
+		border: 1px solid  green;
+		padding: 10px;
+		width: 160px;
+	}
+	
+	#box1 {
+		width: 160px;
+		height: 30px;
+	}
+
+
+	#box2{
+		position: relative;
+		top: 0;
+		left: 0;
+		background-color: #fff;
+		
+	}
+	#box2 ol{
+		padding: 5px  20px;
+	}
+	
+
 
 		
 </style>
+
+
+
+<script type="text/javascript">
+
+
+	
+	function test() {
+		
+		//alert("^^");
+		var box1 = document.getElementById("box1");
+		var box2 = document.getElementById("box2");
+		
+		box1.className="none";
+		box2.className="show";
+		
+	}
+
+	function exit() {
+		
+		//alert("^^");
+		var box1 = document.getElementById("box1");
+		var box2 = document.getElementById("box2");
+		
+		box1.className="show";
+		box2.className="none";
+		
+	}
+
+</script>
+
 
 </head>
 <body>
@@ -250,12 +318,12 @@
 		<div id="header">
 			<h1>SK Together</h1>
 			<ul class="gnb">
-			 						<!-- 2중클래스 사용하기 -->
-				<li><a href="#"><span class="menu m1">기브유</span></a></li>
-				<li><a href="withyou.html"><span class="menu m2">위드유</span></a></li>
-				<li><a href="#"><span class="menu m3">스마트전통시장</span></a></li>
-				<li><a href="#"><span class="menu m4">BRAVO!</span></a></li>
-				<li><a href="#"><span class="menu m5">SKT와 사회공헌</span></a></li>
+			 	<!-- 2중클래스 사용하기 -->
+				<li value="1"><a href="#"><span class="menu m1">기브유</span></a></li>
+				<li value="2"><a href="withyou.html"><span class="menu m2">위드유</span></a></li>
+				<li value="3"><a href="#"><span class="menu m3">스마트전통시장</span></a></li>
+				<li value="4"><a href="#"><span class="menu m4">BRAVO!</span></a></li>
+				<li value="5"><a href="#"><span class="menu m5">SKT와 사회공헌</span></a></li>
 			</ul>
 			
 		</div>
@@ -263,6 +331,31 @@
 		
 		<!-- 콘텐츠 영역 -->
 		<div id="contents">
+			
+			<!-- 실시간 급상승 검색어 -->
+			
+			
+		<div id="gap">
+			<div id="box1" onmouseover="test()">
+				<span><a>금명</a></span>
+			</div>
+			<div id="box2"  class="none" onmouseout="exit()">
+				<ol>
+						<li>조희팔</li>
+						<li>하기스물티슈</li>
+						<li>금명</li>
+						<li>골든디스크</li>
+						<li>레알마드리드 </li>
+						<li>밀라 요보비치</li>
+						<li>레지던트 이블..</li>
+						<li>맨몸의 소방관</li>
+						<li>문재인</li>
+						<li>외모지상주의</li>
+				</ol>
+			</div>
+		</div>
+		
+		
 			<div class="">
 				<a href="">
 					<span class="">
@@ -391,6 +484,8 @@
 		
 		<!-- 풋터 끝 -->
 	</div>
+	
+	
 	
 
 </body>

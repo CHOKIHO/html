@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+	
+	function test() {
+		
+		//현재문서 (document)에서 이름이 f 인 폼객체 (id가 아니라 name으로 억세스)
+		
+		var f = document.f;
+		var str = f.v1.value;
+		
+		//id로 접근시 (form이 여러개일경우)
+		var str2 = document.getElementById("s_v1").value;
+		
+		//alert(str+","+str2);
+		
+		if (str.trim().length>0) {
+			if (str>0 && str<11) {
+				alert(++str);
+			}
+		} else {
+			document.getElementById("s_v1").value="";
+			alert("빈칸입니다.")
+		}
+
+		
+	}
+</script>
+</head>
+<body>
+
+	<form name="f">
+	
+		<label for="s_v1">값:</label>
+		<input type="text" id="s_v1" name="v1"/>
+		<input type="button" value="확인" onclick="test()"/>
+	
+	</form>
+
+</body>
+</html>

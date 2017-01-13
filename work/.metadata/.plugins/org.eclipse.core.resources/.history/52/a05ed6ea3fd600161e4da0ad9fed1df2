@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+
+	div#box1, div#box2 {
+		width:200px;
+		height:120px;
+		background-color: #00bfff;
+		border: 1px solid blue;
+		text-align: right;
+	}
+		
+	input#s_id, input#s_pw {
+		width: 90px;
+		margin-bottom: 5px;
+	}	
+		
+	
+</style>
+
+</head>
+
+<body>
+
+	<h1>DIV 숨기기</h1>
+	
+	<div id="box1">
+	
+		<form>
+			<fieldset>
+				<legend>로그인</legend>
+				<label for="s_id">ID:</label>
+				<input type="text" id="s_id" name="id"/>
+				
+				<label for="s_pw">PW:</label>
+				<input type="password" id="s_pw" name="pw"/>
+				
+				<input type="button" value="로그인" onclick="login()"/>
+				
+				
+			</fieldset>
+		</form>
+	
+	</div>
+		<div id="box2">
+		OOO님 환영합니다.
+	</div>
+
+</body>
+</html>

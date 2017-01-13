@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<style type="text/css">
+	div { 
+		width: 400px;
+		height: 150px;
+		border: 1px solid black;
+		border-collapse: collapse;
+		background-color: #00bfff;
+	}
+	
+	.test {
+		font-size: 20px;
+		font-weight: bold;
+		color: blue;
+	}
+</style>
+
+<script type="text/javascript">
+	
+	jQuery(function() {
+		
+		$("#btn").bind("click", function() {
+			
+			if ($(this).val() == "감추기") {
+				
+				$(this).val("보기");
+			} else {
+				
+				$(this).val("감추기");
+			}
+			
+			$(this).prop("value", $("div").is("":hidden) ? "감추기" : "보이기");
+			
+					
+			$("div").toggle(300);				
+			
+		});
+		
+	});
+
+</script>
+
+</head>
+<body>
+	
+	<input type="button" value="감추기" id="btn"/>
+	
+	<div>
+		<p>수요일</p>
+	</div>
+	
+</body>
+</html>

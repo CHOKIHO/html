@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>테이블 추가</title>
+
+<style type="text/css">
+	
+	body>table {
+		width:300px;
+		border: 1px solid blue;
+		border-collapse: collapse;
+	}
+	body>table th, body>table td {
+		border: 1px solid blue;
+		padding: 4px;
+		//text-align: center;
+	}
+	
+	body>table>thead th {
+		background-color: #cdcdcd;
+	}
+	
+	
+</style>
+
+<script type="text/javascript">
+
+	var idx=1;
+	
+	//테이블 Row 추가 함수
+	function addRow() {
+		
+		//추가할 td를 생성한다.
+		var td1 = document.createElement("td");
+		var td2 = document.createElement("td");
+		var td3 = document.createElement("td");
+		var td4 = document.createElement("td");
+		
+		//var btn = document.createElement("<input type='button' value='삭제'/>");
+		 
+		
+		//① td객체에 문자열지정 (innerHTML, innerText)
+		td1.innerHTML = idx++;
+		td2.innerHTML = "이순신";	
+		td3.innerHTML = "010-2222-3333";
+		td4.innerHTML = "<input type='button' value='삭제' onclick='deleteRow(this)'/>";
+		
+		
+		//② 추가할 tr을 생성
+		var tr = document.createElement("tr");
+		
+		//③ tr 엘리먼트에 td엘리먼트 추가
+		tr.appendChild(td1);
+		tr.appendChild(td2);
+		tr.appendChild(td3);
+		tr.appendChild(td4);
+	
+		//tr.innerHTML = td1 + td2 + td3; (element에 문자열 추가)
+		
+		//④ row를 추가할 table 검색  
+		var tab = document.getElementById("myTable");
+		
+		//⑤ tbody를 찾기 (DOM구조: 자식들 태크는 배열로 저장되어 있음)
+		var tbody = tab.children[1];
+		
+		//⑥ tbody에 tr추가
+		tbody.appendChild(tr);
+		
+		//⑦ sytle 추가
+		tr.style.textAlign = "center";
+		
+		
+		//tr.onmouseover = delRow();  <-- ()있을때 없을때 차이
+		
+		var rowNo=0;
+		
+		tr.onmouseover = function() {  //익명함수 사용 (함수안에서 함수사용) 
+		
+			rowNo = this.rowIndex;				//전역변수 이용
+			//table.rowNo = this.rowIndex;    //테이블변수 이용  	
+			
+		};
+		
+		tr.onclick = function() {
+			
+			
+			//alert(rowNo);
+			tab.deleteRow(rowNo);
+			//table.deleteRow(table.rowNo);
+
+		};
+
+	}
+	
+	//테이블 행 삭제함수 (마우스 over를 이용)
+	
+	function deleteRow() {
+
+		//② 추가할 tr을 생성
+		var tr = document.createElement("tr");
+
+		//④ row를 추가할 table 검색  
+		var tab = document.getElementById("myTable");
+
+		
+		//alert("^^ : "+this.rowIndex)
+			
+	}
+	
+</script>
+
+</head>
+<body>
+	<h1>테이블 행추가</h1>
+	
+	<table id="myTable">
+		<thead>
+			<tr>
+				<th colspan="4">
+					<input type="button" value="추가" onclick="addRow()"/>
+				</th>
+			</tr>
+			<tr>
+				<th>번호</th>
+				<th>이름</th>
+				<th>연락처</th>
+				<th>삭제</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>0</td>
+				<td>마루치</td>
+				<td>010-1111-2222</td>
+				<td></td>
+			</tr>
+		</tbody>	
+	</table>
+
+</body>
+</html>

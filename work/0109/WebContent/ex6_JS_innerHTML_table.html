@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div#box {
+		width:400px;
+		height:250px;
+		border: ipx solid #999;
+		background-color: #00bfff;
+		margin-top: 10px;
+		padding:20px
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+</style>
+
+<script type="text/javascript">
+
+	function make() {
+		
+		var row = document.getElementById("row");
+		var r=parseInt(row.value);
+		var cos = document.getElementById("col");
+		var c=parseInt(col.value);
+		
+		var msg="";
+		var cnt=1;
+		
+		for (i=0;i<r;i++) {
+			
+			msg += "<tr id='a"+i+"'>"; 
+			
+			for (var j=0;j<c;j++){
+								
+				 msg += "<td>" + cnt + "</td>";
+				 ++cnt;
+			}
+			
+			msg += "</tr>";
+		}
+		
+		var box = document.getElementById("tbody");
+		box.innerHTML=msg;
+		
+	}
+
+</script>
+</head>
+<body>
+
+	<form id="f1">
+	
+		<input type="text"  id="row" name="row" size=3>, &nbsp;
+		<input type="text"  id="col" name="col" size=3>
+		<input type="button" value="확인" onclick="make()"/>
+		 
+	
+	</form>
+	<div id="box">
+		<table border="1">
+			<tbody id="tbody">
+			</tbody>
+		</table>
+	</div>
+
+</body>
+</html>

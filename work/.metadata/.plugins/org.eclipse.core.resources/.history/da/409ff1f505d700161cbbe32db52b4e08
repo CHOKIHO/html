@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  
+  <script>
+  		function test(){
+  			
+  			// 현재 문서에 있는 것들 중 아이디가 txt1인 요소 검색한 후 값을 가져온다.
+  			var txt = document.getElementById("txt1").value;
+  			
+  			var txt2 = $("#txt1").value;
+  			
+  			alert(txt +", "+txt2);
+  		}
+  </script>
+</head>
+<body>
+
+	<form action="">
+		<fieldset>
+			<legend>값 입력</legend>
+			<label for="txt1">값1:</label>
+			<input type="text"  id="txt1"  name="v1"/>
+			<input type="button"  value="보내기"  onclick="test()"/>
+		</fieldset>
+	</form>
+	
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>산지애(Bootstrap-SOLID)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">           	
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">산지애</a>
+        </div>
+        
+        
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+
+	<!-- *****************************************************************************************************************
+	 BLUE WRAP
+	 ***************************************************************************************************************** -->
+	<div id="blue">
+	    <div class="container">
+			<div class="row">
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /blue -->
+
+	 
+	<!-- *****************************************************************************************************************
+	 AGENCY ABOUT
+	 ***************************************************************************************************************** -->
+
+	 <div class="container mtb">
+	 	<div class="row">
+
+<div class="container">
+
+  <ul id="myTab" class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">산지애 브랜드 이야기</a></li>
+    <li role="presentation" class=""><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">사업소개</a></li>
+    <li role="presentation" class=""><a href="#cf" role="tab" id="cf-tab" data-toggle="tab" aria-controls="profile" aria-expanded="false">채용정보</a></li>
+  </ul>
+  
+  <div id="myTabContent" class="tab-content">
+  
+  
+    <div role="tabpanel" class="tab-pane fade active in" id="home" aria-labelledby="home-tab">
+			<img class="img-responsive" src="assets/img/brand.png" alt="">
+			<p>산지애의 CI는 청정고랭지의 산과 땅에서 자란 우리 농산물을 사랑해 달라는 의미와 함께 산과 땅을 사랑하는 마음으로우리 강산을 지키겠다는 농민들의 마음을 표현한 것입니다.우리 땅에서 자란 농산물이야 말로 소비자의 먹을거리를 더욱더 풍요롭고 즐겁게 만들어 잘 살아보겠다는 농민의 뜻이기도 합니다.</p>
+    </div>
+    
+    
+    <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+      <p>주요품목의 취급현황</p>
+      <p>2016년 산지애는 안정적 성장 기반 구축을 통한 자체 판매량 확충으로 파크식 포장센터 설립 / 농가 수취가격 안정화 정책 / 단순 가공산업 진출에 의한 고부가가치 창출을 목표로 합니다.</p>
+      
+      
+      <table class="table table-bordered table-striped nanum">
+	  <colgroup>
+	    <col class="col-xs-1">
+	    <col class="col-xs-1">
+	    <col class="col-xs-1">
+	    <col class="col-xs-1">
+	    <col class="col-xs-1">
+	    <col class="col-xs-1">
+	    <col class="col-xs-1">
+	  </colgroup>
+	  <thead>
+	    <tr>
+	      <th>주요품폭</th>
+	      <th>사과</th>
+	      <th>감귤</th>
+	      <th>복숭아</th>
+	      <th>자두</th>
+	      <th>기타(배/토마토/수입)</th>
+	      <th>합계</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr class="active">
+	      <td>물량(톤)</td>
+	      <td>6,055</td>
+	      <td>1,721</td>
+	      <td>668</td>
+	      <td>551</td>
+	      <td>1,154</td>
+	      <td>10,149</td>
+	    </tr>
+	    <tr class="active">
+	      <td>판매금액(100만원)</td>
+	      <td>28,445</td>
+	      <td>1,305</td>
+	      <td>2,576</td>
+	      <td>2,512</td>
+	      <td>7,261</td>
+	      <td>42,099</td>
+	    </tr>
+
+	  </tbody>
+	</table>
+      
+      
+      
+    </div>
+    <div role="tabpanel" class="tab-pane fade" id="cf" aria-labelledby="cf-tab">
+      <p>송원 APC는 모든 구성원들이 갖추어야 할 자젹요건을 송원 manspip으로 정의합니다. 우리회사가 요구하는 인재상은 OPOQ와 송원인의 자격을 갖춘 인재입니다.</p>
+      <h2>송원인의 자격</h2>
+      <h4><i class="fa-alph">1</i>적극적이고 능동적이어야 한다.</h4>
+      <h4>창의성을 갖춰야 한다.</h4>
+      <h4>말보다 행동을 먼저 해야한다.</h4>
+      <h4>도전정신을 갖춰야 한다.</h4>
+      <h4>인간미가 있어야 한다.</h4>
+    </div>
+    
+  </div>
+
+</div>
+
+	 	</div><! --/row -->
+	 </div><! --/container -->
+	 
+
+
+
+	 
+
+
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>영농조합법인송원에이피씨</h4>
+		 			<div class="hline-w"></div>
+		 			<p>송원APC는 산지유통 전문조직을 갖춘 농산물 전문 유통회사입니다.</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>주문관련상담</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				<a href="#"><i class="fa fa-dribbble"></i></a>
+		 				<a href="#"><i class="fa fa-facebook"></i></a>
+		 				<a href="#"><i class="fa fa-twitter"></i></a>
+		 				<a href="#"><i class="fa fa-instagram"></i></a>
+		 				<a href="#"><i class="fa fa-tumblr"></i></a>
+		 			</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>주소</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				경기도 용인시 처인구 백옥대로 948<br/>
+		 				통신판매 : 2014-용인처인-00175<br/>
+		 				copyright ⓒ www.sanjiae.com all right reserved<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->
+	 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
+
+
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+
+<script type="text/javascript">
+
+	function m_trim(str){
+		
+		var s = str.replace("/^\s+|/s+$/g"  ,"");
+		//	 /^ : 시작부분
+		//	 \s : 공백
+		// 	 +  : 공백 1개이상
+		//	 |  : or
+		//   \s : 공백
+		//   +  : 공백 1개이상
+		//   $/ : 끝부분 
+		//   g  : 찾기
+		
+		return s;
+
+	}
+
+	function test(ff) {
+		
+		var v1 = document.forms[0].v1.value;
+		//var v1 = document.getElementById(id);
+		//var v1 = ff.v1.value;
+
+		//alert(v1);
+		
+		var msg = m_trim(v1);
+		
+		document.forms[0].v1.value = msg;
+		
+		document.forms[0].v1.focus;
+		
+		if (msg=="") {
+			alert("값을 입력하세요");
+			return;
+		}
+	
+		
+		
+		//alert(msg);
+	}
+
+</script>
+
+</head>
+<body>
+
+	<h1>정규표현식을 이용한 trim 기능</h1>
+	
+	<form action="">
+		<fieldset>
+			<legend>값입력</legend>
+			<label for="txt1"></label>
+			<input type="text" id="txt1" name="v1"/>
+			<input type="button" value="보내기" onclick="test(this.form)"/>
+		</fieldset>
+	</form>
+</body>
+</html>

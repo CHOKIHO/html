@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	div#box {
+		width:400px;
+		height:250px;
+		border: ipx solid #999;
+		margin-top: 10px;
+		padding:20px
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+</style>
+
+<script type="text/javascript">
+
+	function setBg(v1) {
+		
+		var color="";
+		swicth (v1) {
+			case "Red":
+				color="#f00";
+				break;
+			case "Green":
+				color="#0f0";
+			case "Blue":
+				color="#00f"
+		}
+		
+		var box =document.getelementById("box");
+		
+		box.style.background=color;    /* 스타일로 지정해야함 */
+		
+	}
+
+</script>
+
+</head>
+<body>
+
+	<h2>CSS 연습</h2>
+	
+	<input type="button" value="Red" onclick="setBg(this.value)">
+	<input type="button" value="Green" onclick="setBg(this.value)">
+	<input type="button" value="Blue" onclick="setBg(this.value)">
+	
+	
+	<div id="box"></div>
+	
+</body>
+</html>

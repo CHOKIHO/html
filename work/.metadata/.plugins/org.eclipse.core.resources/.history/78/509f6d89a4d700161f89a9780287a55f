@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<style type="text/css">
+	#box { 
+		width: 600px;
+		height: 500px;
+		padding: 10px;
+		border: ipx solid bule;
+	}
+</style>
+<script type="text/javascript">
+	
+	$(function() {
+		
+		var str="";
+		var ar = $(".test, span, div");   //클래스 .test + 태그가 span
+		
+		for (var i=0;i<ar.length;i++){
+			
+			str += ar.eq(i).html();
+						
+			//str += ar.index(i).text;
+			
+		}
+		
+		alert(str);
+		
+	});
+
+</script>
+
+</head>
+<body>
+	<h1 class="test">이것은 h1</h1>
+	<p>p요소1</p>
+	<p>p요소2</p>
+	<p>p요소3</p>
+	<span>이것은 span</span>
+	<p class="test">p요소4</p>
+	<p>p요소1</p>
+	<div id="box">여긴 div</div>
+</body>
+</html>

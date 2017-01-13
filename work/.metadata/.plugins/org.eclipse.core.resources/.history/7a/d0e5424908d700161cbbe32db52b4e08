@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+
+
+
+
+
+  
+  
+
+<script type="text/javascript">
+//현재 페이지가 로드됐을 때 수행하는 이벤트 - JavaScript기법
+
+/* 	window.onload = function {
+		alert("^^");
+	} */
+	
+	//위의 내용을 jQuery로 수정한다면 다음과 같다.
+	$(function(){
+		alert("^^");
+	});
+	
+	
+
+	
+}
+</script>
+ 
+</head>
+<body>
+</body>
+</html>
+

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+	table{
+		border: 1px solid black;
+		width: 400px;
+		border-collapse: collapse;
+		border-spacing: 0px; /* 셀과 셀 사이의 간격 */
+	}
+	td, th{
+		border: 1px solid black;
+		padding: 10px  4px;
+	}
+	
+	table>thead>tr{
+		background-color: #ababab;
+	}
+</style>
+</head>
+<body>
+
+	<h1>테이블 연습</h1>
+	
+	<form>
+		<table>
+			<thead>
+				<tr>
+					<th>이름</th>
+					<th>이메일</th>
+					<th>연락처</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="3">자료제공: INCREPAS</td><!-- colspan은 컬럼들의 병합, rowspan은 행 병합 -->
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>2</td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+			</tbody>	
+		</table>
+	
+
+
+	<h1>테이블 연습</h1>
+	
+	<form>
+		<table>
+			<thead>
+				<tr>
+					<th>이름</th>
+					<th>이메일</th>
+					<th>연락처</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="3">자료제공: INCREPAS</td><!-- colspan은 컬럼들의 병합, rowspan은 행 병합 -->
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td colspan="3">1</td>
+				</tr>
+				<tr>
+					<td rowspan="2>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+
+					<td>5</td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>5</td>
+					<td>6</td>
+				</tr>
+
+			</tbody>	
+		</table>
+
+
+
+	
+		<label for="m_id">아이디:</label>
+		<input type="text"  id="m_id"  name="id"/><br/>
+		
+		<label for="m_pw">비밀번호:</label>
+		<!-- HTML에서 이름이 같은 파라미터들은 JSP에서는 배열로 받는다. -->
+		<input type="password"  id="m_pw"  name="pw"/><br/>
+		
+		<label for="m_pwd">비밀번호 재확인:</label>
+		<input type="password"  id="m_pwd"  name="pw"/><br/>
+		
+		<label for="m_name">이름:</label>
+		<input  id="m_name"  name="name"/><br/>
+	</form>
+</body>
+</html>
+
+

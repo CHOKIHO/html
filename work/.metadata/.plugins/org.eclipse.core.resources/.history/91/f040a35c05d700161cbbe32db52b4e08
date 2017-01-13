@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  
+<script type="text/javascript">
+	
+	function test() {
+		
+		var txt1 = document.getElementById("txt1").value;
+		
+		var txt2 = $(#txt1).val();
+		
+		alert(txt1 + " , " + txt2);
+		
+	}
+
+
+</script>  
+</head>
+
+<body>
+
+	<form action="">
+		<fieldset>
+			<legend>값입력</legend>
+			<label for="txt1"></label>
+			<input type="text" id="txt1" name="v1"/>
+			<input type="button" value="보내기" onclick="test"/>
+		</fieldset>
+	</form>
+
+</body>
+</html>

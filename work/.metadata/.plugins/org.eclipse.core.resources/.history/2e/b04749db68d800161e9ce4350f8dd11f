@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="./css/bootstrap.css" rel="stylesheet">
+    <!-- DataTables CSS -->
+    <link href="./css/dataTables.bootstrap.css" rel="stylesheet">
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+
+<style type="text/css">
+	#table { 
+		width: 500px;
+/* 		border: 1px solid black;
+		border-collapse: collapse;
+ */	}
+	
+	#table th, #table td {
+		border: 1px solid black;
+		padding: 5px;
+	}
+	
+	#table th {
+		text-align: left;
+	}
+	
+	.ch {
+		width: 30px;
+	}
+</style>
+
+<script type="text/javascript">
+	
+	$(function() {
+		
+		$("#all").bind("click", function() {
+			
+			//var ar = $("tbody input[type=checkbox]");
+			//var ar = $("tbody").find("input[type=checkbox]");
+			
+			var ar = $("tbody").find(":checkbox");   //속성값으로 find
+		
+			//this(#all)의 checked상태에 따라 ar의 prop(속성)을 checked로 
+			ar.prop("checked", this.checked);
+
+			if (this.checked) {
+				$(this.next().text("선택해제"));
+			} else {
+				$(this.next().text("전체선택"));
+			}
+			
+		});
+	});
+
+</script>
+
+</head>
+<body>
+	<h1>jQuery로 체크박스 제어</h1>
+	<input type="button" value="추가" id="btn"/>
+	
+	<table id="table" class="table table-striped table-bordered table-hover">
+		<thead>
+			<tr>
+				<th colspan="2">
+					<input type="checkbox" id="all"/><span>전체선택</span>				
+				</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td class="ch"><input type="checkbox" id="ch1"/></td>
+				<td>항목1</td>
+			</tr>
+			<tr>
+				<td class="ch"><input type="checkbox" id="ch2"/></td>
+				<td>항목2</td>
+			</tr>
+			<tr>
+				<td class="ch"><input type="checkbox" id="ch3"/></td>
+				<td>항목3</td>
+			</tr>
+			<tr>
+				<td class="ch"><input type="checkbox" id="ch4"/></td>
+				<td>항목4</td>
+			</tr>
+			<tr>
+				<td class="ch"><input type="checkbox" id="ch5"/></td>
+				<td>항목5</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	
+	<div class="panel panel-default">
+		<div class="panel-heading">
+		    패널 title
+		</div>
+		<div class="panel-body">
+			div로 패널만들기
+		</div>
+
+	</div>
+	
+	
+	
+	
+		
+</body>
+</html>

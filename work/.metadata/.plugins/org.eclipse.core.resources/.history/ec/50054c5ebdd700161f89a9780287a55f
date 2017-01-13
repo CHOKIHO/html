@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<style type="text/css">
+	#box { 
+		width: 500px;
+		height: 300px;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}	
+</style>
+
+<script type="text/javascript">
+	
+	jQuery(function() {
+	
+		jQuery("#btn1").bind("click",function() {
+		
+			jQuery("#box").html("<h1>반갑습니다.</h1>");
+		});
+
+		jQuery("#btn2").bind("click",function() {
+			
+			jQuery("#box").html("");
+			
+			//btn1 이벤트 해제
+			jQuery("#btn1").unbind("click");
+		});
+	});
+
+</script>
+
+</head>
+<body>
+	
+	<input type="button" value="보여주기" id="btn1"/>
+	<input type="button" value="감추기" id="btn2"/>
+	
+	<div id="box"></div>
+	
+</body>
+</html>

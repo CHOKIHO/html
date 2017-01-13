@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>산지애(Bootstrap-SOLID)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">           	
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">산지애</a>
+        </div>
+        
+        
+        <div class="navbar-collapse collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a href="contact.html">로그인</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<!-- *****************************************************************************************************************
+	 HEADERWRAP
+	 ***************************************************************************************************************** -->
+	<div id="headerwrap">
+	    <div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2">
+					<h3>재배에서 고객까지</h3>
+					<h1>산지애 시스템으로 우수한 품질관리!</h1>
+					<h5>산지애는 우수한 품질의 농산물을 공급하기 위해</h5>
+					<h5>재배에서부터 수확, 선별, 출고까지 체계적인 시스템으로 관리하고 있습니다.</h5>				
+				</div>
+				<div class="col-lg-4 col-lg-offset-4">
+					<img src="assets/img/apple.png" class="img-responsive">
+				</div>
+			</div><!-- /row -->
+	    </div> <!-- /container -->
+	</div><!-- /headerwrap -->
+
+	<!-- *****************************************************************************************************************
+	 SERVICE LOGOS
+	 ***************************************************************************************************************** -->
+	 <div id="service">
+	 	<div class="container">
+ 			<div class="row centered">
+ 				<div class="col-md-4">
+ 					<i class="fa fa-apple"></i>
+ 					<h4>씻어나온 꿀사과</h4>
+ 					<p>산지애 씻어나온 꿀사과 3kg 3box(특대과) / 2016햇사과! 미시마, 봉지 세척사과 , 당도선별 12brix </p>
+ 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-inbox"></i>
+ 					<h4>고품격 과일바구니</h4>
+ 					<p>산지애 과일바구니 LOVE 바구니 <br/> 산지애 과일바구니 실속바구니</p>
+ 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+ 				</div>
+ 				<div class="col-md-4">
+ 					<i class="fa fa-bell"></i>
+ 					<h4>과일칩&양배추즙</h4>
+ 					<p>산지애 과일칩 - 사과 그대로 5봉 + 배 그대로 5봉 <br/> 산지애 과일칩 - 하루과일 10봉 (봉당 11g)</p>
+ 					<p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+ 				</div>		 				
+	 		</div>
+	 	</div><! --/container -->
+	 </div><! --/service -->
+	 
+	<!-- *****************************************************************************************************************
+	 FOOTER
+	 ***************************************************************************************************************** -->
+	 <div id="footerwrap">
+	 	<div class="container">
+		 	<div class="row">
+		 		<div class="col-lg-4">
+		 			<h4>영농조합법인송원에이피씨</h4>
+		 			<div class="hline-w"></div>
+		 			<p>송원APC는 산지유통 전문조직을 갖춘 농산물 전문 유통회사입니다.</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>주문관련상담</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				<a href="#"><i class="fa fa-dribbble"></i></a>
+		 				<a href="#"><i class="fa fa-facebook"></i></a>
+		 				<a href="#"><i class="fa fa-twitter"></i></a>
+		 				<a href="#"><i class="fa fa-instagram"></i></a>
+		 				<a href="#"><i class="fa fa-tumblr"></i></a>
+		 			</p>
+		 		</div>
+		 		<div class="col-lg-4">
+		 			<h4>주소</h4>
+		 			<div class="hline-w"></div>
+		 			<p>
+		 				경기도 용인시 처인구 백옥대로 948<br/>
+		 				통신판매 : 2014-용인처인-00175<br/>
+		 				copyright ⓒ www.sanjiae.com all right reserved<br/>
+		 			</p>
+		 		</div>
+		 	
+		 	</div><! --/row -->
+	 	</div><! --/container -->
+	 </div><! --/footerwrap -->
+	 
+	 
+	<!-- *****************************************************************************************************************
+	 LOGIN
+	 ***************************************************************************************************************** -->
+
+<div class="col-lg-6">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Modals
+        </div>
+        <!-- /.panel-heading -->
+        <div class="panel-body">
+            <!-- Button trigger modal -->
+            <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+                Launch Demo Modal
+            </button>
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                        </div>
+                        <div class="modal-body">
+                        
+                        
+                        
+                           
+                        	<form action="">
+                        		
+		                        <div class="form-group input-group">
+		                        	<span class="input-group-addon">
+		                        		<i class="fa fa-user"></i>
+		                        	</span>
+		                            <input class="form-control" placeholder="ID를 입력하세요">
+
+		                        	<span class="input-group-addon">
+		                        		<i class="fa fa-lock"></i>
+		                        	</span>
+		                            <input class="form-control" type="password" placeholder="PWD를 입력하세요">
+		                        </div>
+
+		                        <div class="form-group input-group">
+		                        	<span class="input-group-addon">
+		                        		<i class="fa fa-user"></i>
+		                        	</span>
+		                            <input class="form-control" placeholder="ID를 입력하세요">
+
+		                        	<span class="input-group-addon">
+		                        		<i class="fa fa-user"></i>
+		                        	</span>
+		                            <input class="form-control" placeholder="ID를 입력하세요">
+		                        </div>
+                        	
+                        	</form>
+                        
+                        
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                    <!-- /.modal-content -->
+                </div>
+                <!-- /.modal-dialog -->
+            </div>
+            <!-- /.modal -->
+        </div>
+        <!-- .panel-body -->
+    </div>
+    <!-- /.panel -->
+</div>
+
+
+	 
+	 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/retina-1.1.0.js"></script>
+	<script src="assets/js/jquery.hoverdir.js"></script>
+	<script src="assets/js/jquery.hoverex.min.js"></script>
+	<script src="assets/js/jquery.prettyPhoto.js"></script>
+  	<script src="assets/js/jquery.isotope.min.js"></script>
+  	<script src="assets/js/custom.js"></script>
+
+
+    <script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+  </body>
+</html>

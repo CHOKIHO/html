@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+	div#box {
+		width:400px;
+		height:250px;
+		border: ipx solid #999;
+		background-color: #00bfff;
+		margin-top: 10px;
+		padding:20px
+		font-weight: bold;
+		font-size: 14px;
+	}
+
+</style>
+
+<script type="text/javascript">
+
+	function exe(idx) {
+		
+		var msg="";
+		
+		switch (idx) {
+			case 1:
+				msg="아름다운 여신같은 차"
+				break;
+			case 2:
+				msg="우아한 멋진 귀부인같은 차"
+				break;
+			case 3:
+				msg="타보고 싶은 차"
+				break;
+		}
+		
+		var box = document.getElementById("box");
+		box.innerHTML=msg;
+		
+		alert(document.form.select.value);
+		
+	}
+
+</script>
+
+</head>
+<body>
+
+	<h2>inner HTML 연습</h2>
+	<form action="">
+		<label for="a1">항목:</label>
+		<select id="a1" onchange="exe(this.selectedIndex)">  <!-- index값은 this.selectedIndex, value값:this.value -->
+			<option>::선택하세요::</option>
+			<option value="a">아우디R8</option>
+			<option value="b">벤틀리</option>
+			<option value="g">제네시스</option>
+		</select>
+	</form>
+	<div id="box"></div>
+	
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<style type="text/css">
+	div#box { 
+		width: 100px;
+		height: 100px;
+		border: 1px solid black;
+		border-collapse: collapse;
+		background-color: #00bfff;
+		text-align: center;
+		line-height: 100px;
+	}
+	
+</style>
+
+<script type="text/javascript">
+	
+	$(function() {
+		
+		$("#box").bind("click", function() {
+			
+			//현재 div위치를 상대적 위치로 변경
+			$(this).css("position","relative");
+			
+			/* 위치, 시간, animate 후처리함수 */
+			$(this).animate( {top:$(window).height()-$(this).height()+10, opacity:0} , 1000 , function() {
+				
+				//$(this).fadeTo(500,0);
+
+			} );
+		});
+	});
+
+</script>
+
+</head>
+<body>
+	
+	<div id="box">BOX</div>
+	
+</body>
+</html>

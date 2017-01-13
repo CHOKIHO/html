@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h2>inner HTML 연습</h2>
+
+	<form action="">
+		<label for="a1">항목:</label>
+		<select>
+			<option>::선택하세요::</option>
+			<option value="a">아우디R8</option>
+			<option value="b">벤틀리</option>
+			<option value="g">제네시스</option>
+		</select>
+	</form>
+</body>
+</html>

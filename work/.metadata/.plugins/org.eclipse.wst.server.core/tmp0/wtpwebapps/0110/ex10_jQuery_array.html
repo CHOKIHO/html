@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+<script type="text/javascript">
+	
+	$(function() {
+		
+		$("#btn").bind("click", function() {
+			
+			var pp = $("p");
+			
+			for (var i=0;i<pp.length;i++) {
+				
+				if ((i+1)%2 == 0) {
+					pp[i].style.color = "#f00";
+					
+				} 
+			}
+		});
+		
+	});
+
+</script>
+
+</head>
+
+<body>
+
+	<input type="button" value="CSS변경" id="btn"/>
+	
+	<p>p요소1</p>
+	<p>p요소2</p>
+	<p>p요소3</p>
+	<p>p요소4</p>
+	<p>p요소5</p>
+</body>
+</html>

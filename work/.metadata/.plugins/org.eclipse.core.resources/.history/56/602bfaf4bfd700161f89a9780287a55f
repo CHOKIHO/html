@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+<style type="text/css">
+	#box { 
+		width: 500px;
+		height: 300px;
+		border: 1px solid black;
+		border-collapse: collapse;
+	}	
+	
+	.test {
+		font-size: 20px;
+		font-weight: bold;
+		color: blue;
+	}
+</style>
+
+<script type="text/javascript">
+	
+	jQuery(function() {
+		
+		$("div").eq(0).children().css("color","red");
+		
+		var ch = true;
+		
+		$("#btn1").bind("click", function() {
+			
+			if (ch) {
+				
+				$("div").eq(1).children().addClass("test");
+				$(this).val("CSS해제");					//버튼 value 바꾸기
+
+			} else {
+				
+				$("div").eq(1).children().removeClass("test");
+				$(this).val("CSS적용");
+			}
+			
+			ch = !ch;
+		});
+	});
+
+</script>
+
+</head>
+<body>
+	<h1>jQuery 함수</h1>
+	
+	<input type="button" value="CSS적용" id="btn1"/>
+	
+	<div>
+		<p>야호</p>
+		<em>수요일</em>
+	</div>
+	<div>
+		<p>몰디브</p>
+		<em>산토리니</em>
+	</div>
+</body>
+</html>
